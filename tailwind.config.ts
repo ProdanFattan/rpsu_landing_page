@@ -16,6 +16,7 @@ export default {
         footer_color_s: "#D9D9D9",
         footer_border:"#ABABAB",
         section_back: "#fafafa",
+        footer_back: "#4B3D78"
       },
     },
   },

@@ -12,31 +12,31 @@ export default function Collabrations() {
             <ul>
               <li className="flex items-center pl-6 pb-6">
                 <img src="/rob.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                   Government of People's Republic of Bangladesh
                 </span>
               </li>
               <li className="flex items-center pl-6 pb-6">
                 <img src="/ugc.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                 University Grants Commission
                 </span>
               </li>
               <li className="flex items-center pl-6 pb-6">
                 <img src="/kumudini.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                 Kumudini Hospital
                 </span>
               </li>
               <li className="flex items-center pl-6 pb-6">
                 <img src="/kumudini.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                 Kumudini Pharma Limited
                 </span>
               </li>
               <li className="flex items-center pl-6 pb-0">
                 <img src="/kumudini.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                 Kumudini Handicrafts
                 </span>
               </li>
@@ -47,31 +47,31 @@ export default function Collabrations() {
             <ul>
               <li className="flex items-center pl-6 pb-6">
                 <img src="/Simmons.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                 Simmons University
                 </span>
               </li>
               <li className="flex items-center pl-6 pb-6">
                 <img src="/Techno.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                 Techno India University
                 </span>
               </li>
               <li className="flex items-center pl-6 pb-6">
                 <img src="/chengdu.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                 Chengdu Textile College
                 </span>
               </li>
               <li className="flex items-center pl-6 pb-6">
                 <img src="/pharma.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                 Bangladesh Pharmacy Council
                 </span>
               </li>
               <li className="flex items-center pl-6 pb-8">
                 <img src="/bar.png" alt="" className="lg:h-14 lg:w-14 h-10 w-10" />
-                <span className="pl-2 text-xs md:text-xl">
+                <span className="pl-2 text-xs md:text-xl text-black">
                 Bangladesh Bar Council
                 </span>
               </li>
