@@ -13,7 +13,7 @@ import {
 export default function Footer() {
   return (
     <>
-      <footer className="bg-footer_back px-4 md:px-16 lg:px-28 pt-6">
+      <footer className="container mx-auto bg-footer_back px-4 md:px-16 lg:px-28 pt-6">
         <div className="grid-cols-1 grid md:grid-cols-3 gap-8">
           <div className="md:hidden order-2 grid grid-cols-2">
           <div className="pl-6">

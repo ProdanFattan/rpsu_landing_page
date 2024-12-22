@@ -15,27 +15,34 @@ const cards = [
 
 export default function AnimatedGrid() {
   return (
-    <section className="min-h-screen bg-gray-900 text-white p-8">
+    <section className="container mx-auto px-4 md:px-16 lg:px-28 pt-6 bg-section_back text-white p-8">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {cards.map((card, index) => (
           <motion.div
-            key={index}
-            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // Left/Right animation
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
-            className={`${card.bg} rounded-lg flex items-center justify-center text-center h-48 shadow-lg relative`}
-          >
-            {/* Background Image (Optional) */}
-            {card.img && (
-              <img
-                src={card.img}
-                alt={card.title}
-                className="absolute inset-0 w-full h-full object-cover opacity-50 rounded-lg"
-              />
-            )}
-            <h3 className="z-10 text-lg font-bold px-4">{card.title}</h3>
-          </motion.div>
+          key={index}
+          initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // Left/Right animation
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.8, // Slightly longer duration for smoothness
+            ease: [0.22, 1, 0.36, 1], // Use a custom cubic-bezier easing for smooth acceleration and deceleration
+            type: "spring", // Add spring animation for a natural feel
+            stiffness: 50, // Controls spring tightness
+            damping: 20, // Reduces oscillation
+          }}
+          className={`${card.bg} rounded-lg flex items-center justify-center text-center h-48 shadow-lg relative`}
+        >
+          {/* Background Image (Optional) */}
+          {card.img && (
+            <img
+              src={card.img}
+              alt={card.title}
+              className="absolute inset-0 w-full h-full object-cover opacity-50 hover:opacity-80 rounded-lg"
+            />
+          )}
+          <h3 className="z-10 text-lg font-bold px-4">{card.title}</h3>
+        </motion.div>
+        
         ))}
       </div>
     </section>

@@ -101,18 +101,18 @@ const slides = [
   {
     image: "/slide1.webp",
     buttons: [
-      { text: "Visit Campus", position: { x: 0.75, y: 0.88 } },
-      { text: "Apply Now", position: { x: 0.5, y: 0.88 } },
-      { text: "ERP", position: { x: 0.25, y: 0.88 } },
-      { text: "Tuition & Fees", position: { x: 0.57, y: 0.523 } },
+      { text: "Visit Campus", position: { x: 0.95, y: 0.2 } },
+      { text: "Apply Now", position: { x: 0.95, y: 0.33 } },
+      { text: "ERP", position: { x: 0.95, y: 0.46 } },
+      { text: "Tuition & Fees", position: { x: 0.85, y: 0.57 } },
     ],
   },
   {
     image: "/slide2.webp",
     buttons: [
-      { text: "Academics", position: { x: 0.72, y: 0.1 } },
-      { text: "Visit Campus", position: { x: 0.22, y: 0.05 } },
-      { text: "Apply Now", position: { x: 0.08, y: 0.17 } },
+      { text: "Academics", position: { x: 0.82, y: 0.2 } },
+      { text: "Visit Campus", position: { x: 0.13, y: 0.2 } },
+      { text: "Apply Now", position: { x: 0.23, y: 0.305 } },
     ],
   },
 ];
@@ -168,7 +168,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="w-full h-[249px] md:w-full md:h-[850px] bg-section_back flex justify-center items-center relative overflow-hidden py-16">
+    <div className="container mx-auto w-full h-[249px] md:w-full md:h-[850px] bg-section_back flex justify-center items-center relative overflow-hidden py-16">
       <motion.div
         key={currentSlide}
         ref={containerRef}

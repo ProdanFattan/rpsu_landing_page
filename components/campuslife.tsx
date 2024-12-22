@@ -4,19 +4,26 @@ import { FadeUp } from "@/utils/fadeup";
 export default function CompusLife() {
   return (
     <>
-      <section className="bg-section_back">
+      <section className="container mx-auto bg-section_back">
         <div className="flex justify-center items-center  text-2xl md:text-3xl lg:text-5xl text-slateblue py-6">
           Campus Life
         </div>
         <div className="py-8 lg:py-20 grid grid-cols-1 md:grid-cols-2 md:gap-12 space-y-6 md:space-y-0 md:px-16 lg:px-28">
           <div className="flex justify-center items-center transform transition duration-500 md:hover:scale-110">
             <motion.img
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease: "easeInOut" }}
+              initial={{ opacity: 0, x: -100 }} // Start hidden and shifted left
+              whileInView={{ opacity: 1, x: 0 }} // Fade in and slide into view
+              viewport={{ once: true }} // Animate only once when in the viewport
+              transition={{
+                duration: 0.8, // Shorter duration for smooth motion
+                ease: [0.22, 1, 0.36, 1], // Smooth cubic-bezier easing for natural feel
+                type: "spring", // Adds spring-like motion
+                stiffness: 70, // Spring stiffness for smooth acceleration
+                damping: 20, // Reduces bounce and oscillation
+              }}
               src={"/computerClub.webp"}
               alt=""
+              loading="lazy"
               className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl"
             />
           </div>
@@ -27,6 +34,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[20px] lg:text-[32px] pl-8 md:pl-0 text-slateblue pb-4 text-justify"
               >
                 Computer Club
@@ -36,6 +47,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-black text-justify pb-4"
               >
                 The Computer Club at RPSU provides a platform for students to
@@ -48,6 +63,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-slateblue text-justify font-semibold"
               >
                 <a href="#">Learn More</a>
@@ -63,6 +82,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[20px] lg:text-[32px] pl-8 md:pl-0 text-slateblue pb-4 text-justify"
               >
                 Sports Club
@@ -72,6 +95,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-black text-justify pb-4"
               >
                 The Sports Club at RPSU offers a dynamic platform for students
@@ -84,6 +111,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-slateblue text-justify font-semibold"
               >
                 <a href="#">Learn More</a>
@@ -92,10 +123,17 @@ export default function CompusLife() {
           </div>
           <div className="flex justify-center items-center transform transition duration-500 md:hover:scale-110">
             <motion.img
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease: "easeInOut" }}
+              initial={{ opacity: 0, x: 100 }} // Start hidden and shifted left
+              whileInView={{ opacity: 1, x: 0 }} // Fade in and slide into view
+              viewport={{ once: true }} // Animate only once when in the viewport
+              transition={{
+                duration: 0.8, // Shorter duration for smooth motion
+                ease: [0.22, 1, 0.36, 1], // Smooth cubic-bezier easing for natural feel
+                type: "spring", // Adds spring-like motion
+                stiffness: 70, // Spring stiffness for smooth acceleration
+                damping: 20, // Reduces bounce and oscillation
+              }}
+              loading="lazy"
               src={"/sports.webp"}
               alt=""
               className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl"
@@ -105,12 +143,19 @@ export default function CompusLife() {
         <div className="md:hidden py-8 lg:py-20 grid grid-cols-1 md:grid-cols-2 md:gap-12 space-y-6 md:space-y-0 md:px-16 lg:px-28">
           <div className="flex justify-center items-center transform transition duration-500 md:hover:scale-110">
             <motion.img
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease: "easeInOut" }}
+              initial={{ opacity: 0, x: 100 }} // Start hidden and shifted left
+              whileInView={{ opacity: 1, x: 0 }} // Fade in and slide into view
+              viewport={{ once: true }} // Animate only once when in the viewport
+              transition={{
+                duration: 0.8, // Shorter duration for smooth motion
+                ease: [0.22, 1, 0.36, 1], // Smooth cubic-bezier easing for natural feel
+                type: "spring", // Adds spring-like motion
+                stiffness: 70, // Spring stiffness for smooth acceleration
+                damping: 20, // Reduces bounce and oscillation
+              }}
               src={"/sports.webp"}
               alt=""
+              loading="lazy"
               className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl"
             />
           </div>
@@ -121,6 +166,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[20px] lg:text-[32px] pl-8 md:pl-0 text-slateblue pb-4 text-justify"
               >
                 Sports Club
@@ -130,6 +179,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-black text-justify pb-4"
               >
                 The Sports Club at RPSU offers a dynamic platform for students
@@ -142,6 +195,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-slateblue text-justify font-semibold"
               >
                 <a href="#">Learn More</a>
@@ -152,12 +209,19 @@ export default function CompusLife() {
         <div className="py-8 lg:py-20 grid grid-cols-1 md:grid-cols-2 md:gap-12 space-y-6 md:space-y-0 md:px-16 lg:px-28">
           <div className="flex justify-center items-center transform transition duration-500 md:hover:scale-110">
             <motion.img
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease: "easeInOut" }}
+              initial={{ opacity: 0, x: -100 }} // Start hidden and shifted left
+              whileInView={{ opacity: 1, x: 0 }} // Fade in and slide into view
+              viewport={{ once: true }} // Animate only once when in the viewport
+              transition={{
+                duration: 0.8, // Shorter duration for smooth motion
+                ease: [0.22, 1, 0.36, 1], // Smooth cubic-bezier easing for natural feel
+                type: "spring", // Adds spring-like motion
+                stiffness: 70, // Spring stiffness for smooth acceleration
+                damping: 20, // Reduces bounce and oscillation
+              }}
               src={"/cultural.webp"}
               alt=""
+              loading="lazy"
               className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl"
             />
           </div>
@@ -168,6 +232,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[20px] lg:text-[32px] pl-8 md:pl-0 text-slateblue pb-4 text-justify"
               >
                 Cultural Club
@@ -177,6 +245,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-black text-justify pb-4"
               >
                 The Cultural Club at RPSU fosters cross-cultural understanding
@@ -190,6 +262,10 @@ export default function CompusLife() {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
+                transition={{
+                  duration: 0.8, // Smoother, slightly slower animation
+                  ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
+                }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-slateblue text-justify font-semibold"
               >
                 <a href="#">Learn More</a>

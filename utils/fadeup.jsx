@@ -12,9 +12,9 @@ export const FadeUp = (delay) => {
         transition: {
           type: "spring",
           stiffness: 100,
-          duration: 0.5,
+          duration: 0.8,
           delay: delay,
-          ease: "easeInOut",
+          ease: [0.25, 0.8, 0.5, 1],
         },
       },
     };
