@@ -23,7 +23,7 @@ export default function AnimatedGrid() {
             initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // Left/Right animation
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1, ease: "easeInOut" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             className={`${card.bg} rounded-lg flex items-center justify-center text-center h-48 shadow-lg relative`}
           >
             {/* Background Image (Optional) */}

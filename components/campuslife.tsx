@@ -14,10 +14,10 @@ export default function CompusLife() {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
+              transition={{ duration: 1, ease: "easeInOut" }}
               src={"/computerClub.webp"}
               alt=""
-              className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl" 
+              className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl"
             />
           </div>
           <div className="flex justify-center items-left flex-col">
@@ -38,11 +38,10 @@ export default function CompusLife() {
                 viewport={{ once: true }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-black text-justify pb-4"
               >
-                The Cultural Club at RPSU fosters cross-cultural understanding
-                and appreciation through diverse events and activities,
-                welcoming students of all backgrounds to celebrate and share
-                their cultural heritage. Join us for a vibrant and inclusive
-                community experience.
+                The Computer Club at RPSU provides a platform for students to
+                explore and engage with technology through workshops, coding
+                sessions, and networking events. Join us to enhance your tech
+                skills and connect with like-minded individuals.
               </motion.p>
               <motion.p
                 variants={FadeUp(0.8)}
@@ -57,7 +56,6 @@ export default function CompusLife() {
           </div>
         </div>
         <div className="hidden py-8 lg:py-20 md:grid grid-cols-1 md:grid-cols-2 md:gap-12 space-y-6 md:space-y-0 md:px-16 lg:px-28">
-          
           <div className="flex justify-center items-left flex-col">
             <div className="text-left md:text-left">
               <motion.h1
@@ -67,7 +65,7 @@ export default function CompusLife() {
                 viewport={{ once: true }}
                 className="text-[20px] lg:text-[32px] pl-8 md:pl-0 text-slateblue pb-4 text-justify"
               >
-                Computer Club
+                Sports Club
               </motion.h1>
               <motion.p
                 variants={FadeUp(0.6)}
@@ -76,11 +74,10 @@ export default function CompusLife() {
                 viewport={{ once: true }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-black text-justify pb-4"
               >
-                The Cultural Club at RPSU fosters cross-cultural understanding
-                and appreciation through diverse events and activities,
-                welcoming students of all backgrounds to celebrate and share
-                their cultural heritage. Join us for a vibrant and inclusive
-                community experience.
+                The Sports Club at RPSU offers a dynamic platform for students
+                to engage in various athletic activities, promoting physical
+                fitness, teamwork, and sportsmanship. Join us for an active and
+                energetic community experience.
               </motion.p>
               <motion.p
                 variants={FadeUp(0.8)}
@@ -98,25 +95,23 @@ export default function CompusLife() {
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              src={"/computerClub.webp"}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              src={"/sports.webp"}
               alt=""
-              className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl" 
+              className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl"
             />
           </div>
         </div>
         <div className="md:hidden py-8 lg:py-20 grid grid-cols-1 md:grid-cols-2 md:gap-12 space-y-6 md:space-y-0 md:px-16 lg:px-28">
-          
-
           <div className="flex justify-center items-center transform transition duration-500 md:hover:scale-110">
             <motion.img
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              src={"/computerClub.webp"}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              src={"/sports.webp"}
               alt=""
-              className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl" 
+              className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl"
             />
           </div>
           <div className="flex justify-center items-left flex-col">
@@ -128,7 +123,7 @@ export default function CompusLife() {
                 viewport={{ once: true }}
                 className="text-[20px] lg:text-[32px] pl-8 md:pl-0 text-slateblue pb-4 text-justify"
               >
-                Computer Club
+                Sports Club
               </motion.h1>
               <motion.p
                 variants={FadeUp(0.6)}
@@ -137,11 +132,10 @@ export default function CompusLife() {
                 viewport={{ once: true }}
                 className="text-[10px] lg:text-[20px] px-8 md:pl-0 text-black text-justify pb-4"
               >
-                The Cultural Club at RPSU fosters cross-cultural understanding
-                and appreciation through diverse events and activities,
-                welcoming students of all backgrounds to celebrate and share
-                their cultural heritage. Join us for a vibrant and inclusive
-                community experience.
+                The Sports Club at RPSU offers a dynamic platform for students
+                to engage in various athletic activities, promoting physical
+                fitness, teamwork, and sportsmanship. Join us for an active and
+                energetic community experience.
               </motion.p>
               <motion.p
                 variants={FadeUp(0.8)}
@@ -158,13 +152,13 @@ export default function CompusLife() {
         <div className="py-8 lg:py-20 grid grid-cols-1 md:grid-cols-2 md:gap-12 space-y-6 md:space-y-0 md:px-16 lg:px-28">
           <div className="flex justify-center items-center transform transition duration-500 md:hover:scale-110">
             <motion.img
-              initial={{ opacity: 0, x:-100 }}
+              initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              src={"/computerClub.webp"}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              src={"/cultural.webp"}
               alt=""
-              className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl" 
+              className="w-[330px] md:w-[711px] object-cover drop-shadow rounded-[20px] shadow-xl"
             />
           </div>
           <div className="flex justify-center items-left flex-col">
@@ -176,7 +170,7 @@ export default function CompusLife() {
                 viewport={{ once: true }}
                 className="text-[20px] lg:text-[32px] pl-8 md:pl-0 text-slateblue pb-4 text-justify"
               >
-                Computer Club
+                Cultural Club
               </motion.h1>
               <motion.p
                 variants={FadeUp(0.6)}
