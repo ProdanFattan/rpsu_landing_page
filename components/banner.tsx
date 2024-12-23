@@ -2,7 +2,7 @@
 export default function Banner() {
     return (
       <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('/banner.webp')" }}>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 "></div>
         <div className="relative z-10 container mx-auto flex flex-col items-start justify-center h-full px-4 text-center">
           <h1 className="text-2xl md:text-[64px] font-bold text-white md:mb-14 md:pl-2">
             Admission

@@ -26,7 +26,9 @@ export default {
         footer_border:"#ABABAB",
         section_back: "#fafafa",
         footer_back: "#4B3D78",
-        btn_clr: "#982536"
+        btn_clr: "#982536",
+        card_bg: "#939C4D",
+        video_hover: "#939C4D",
       },
     },
   },

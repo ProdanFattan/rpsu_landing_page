@@ -13,7 +13,7 @@ import {
 export default function Footer() {
   return (
     <>
-      <footer className="container mx-auto bg-footer_back px-4 md:px-16 lg:px-28 pt-6">
+      <footer className=" bg-footer_back px-4 md:px-16 lg:px-28 pt-12">
         <div className="grid-cols-1 grid md:grid-cols-3 gap-8">
           <div className="md:hidden order-2 grid grid-cols-2">
           <div className="pl-6">
@@ -132,24 +132,24 @@ export default function Footer() {
             </div>
           </div>
           <div className="hidden md:grid">
-            <h2 className="text-lg font-semibold mb-4 text-footer_color">
+            <h2 className="text-lg font-semibold text-footer_color">
               Reach Out
             </h2>
             <ul>
               <li className="flex items-center mb-4">
                 <MapPin className="text-footer_color" />
-                <span className="text-footer_color ml-2">
+                <span className="text-footer_color ml-2 text-sm">
                   25, Sultan Giasuddin Road. <br />
                   Shitalakhya, Naryanganj-1400
                 </span>
               </li>
               <li className="flex items-center mb-4">
                 <Phone className="text-footer_color" />
-                <span className="text-footer_color ml-2">info@rpsu.edu.bd</span>
+                <span className="text-footer_color ml-2 text-sm">info@rpsu.edu.bd</span>
               </li>
               <li className="flex items-center mb-4">
                 <Mail className="text-footer_color" />
-                <span className="text-footer_color ml-2">(+88) 02-7635000</span>
+                <span className="text-footer_color ml-2 text-sm">(+88) 02-7635000</span>
               </li>
             </ul>
 

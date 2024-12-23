@@ -7,6 +7,7 @@ import CardSlider from "@/components/card"
 import Navbar from "@/components/navbar"
 import Banner from "@/components/banner"
 import CardCarousel from "@/components/card"
+import FounderSection from "@/components/founder"
 export default function Home(){
   return(
     <>
@@ -14,12 +15,11 @@ export default function Home(){
     <Navbar/>
     <Banner/>
     <CardCarousel/>
-    {/* <Slider/>
-   <CardSlider/>
+    <FounderSection/>
     <CampusLife/>
     <AnimatedGrid/>
     <Collabrations/>
-    <Footer/> */}
+    <Footer/> 
     </div>
     </>
   )

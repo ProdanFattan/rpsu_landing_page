@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Collabrations() {
   return (
     <>
-      <section className="container mx-auto bg-section_back px-4 md:px-16 lg:px-28 pt-6">
+      <section className="container mx-auto bg-section_back px-4 md:px-16 lg:px-28 pt-16">
         <h1 className=" text-slateblue lg:text-5xl text-2xl flex justify-center items-center">
           Accrediatation & Collaboration
         </h1>
