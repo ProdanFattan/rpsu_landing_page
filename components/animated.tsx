@@ -5,26 +5,27 @@ import { motion } from "framer-motion";
 
 const cards = [
   { title: "Faculty Expertise", bg: "bg-gray-800", img: "/faculty.webp" },
-  { title: "Career Development Services", bg: "bg-purple-700", img: "" },
+  { title: "Career Development Services", bg: "bg-footer_back",hbg: "hover:bg-btn_clr", img: "" },
   { title: "Global Perspectives", bg: "bg-gray-800", img: "/globe.webp" },
-  { title: "Transport Facilities", bg: "bg-purple-700", img: "" },
-  { title: "Enriched Library", bg: "bg-purple-700", img: "" },
+  { title: "Transport Facilities", bg: "bg-footer_back",hbg: "hover:bg-btn_clr", img: "" },
+  { title: "Enriched Library", bg: "bg-footer_back",hbg: "hover:bg-btn_clr", img: "" },
   {
     title: "Extracurricular Activities",
     bg: "bg-gray-800",
     img: "/lantern.webp",
   },
-  { title: "Technology & Innovation", bg: "bg-purple-700", img: "" },
+  { title: "Technology & Innovation", bg: "bg-footer_back",hbg: "hover:bg-btn_clr", img: "" },
   {
     title: "Student Support Services",
     bg: "bg-gray-800",
+    
     img: "/support.webp",
   },
 ];
 
 export default function AnimatedGrid() {
   return (
-    <section className="container mx-auto px-4 md:px-16 lg:px-28 pt-6 bg-section_back text-white p-8">
+    <section className="container mx-auto px-4 md:px-16 lg:px-28 pt-6 bg-section_back text-white p-8 font-open_sans">
       <motion.h1
         variants={FadeUp(0.4)}
         initial="initial"
@@ -34,7 +35,7 @@ export default function AnimatedGrid() {
           duration: 0.8, // Smoother, slightly slower animation
           ease: [0.25, 0.8, 0.5, 1], // Custom cubic-bezier easing for a polished effect
         }}
-        className="text-slateblue text-center justify-center pb-16 md:pb-24 text-[24px] md:text-[48px]"
+        className="text-slateblue text-center justify-center pb-16 md:pb-24 text-[24px] md:text-[48px] font-raleway"
       >
         Why Choose RPSU
       </motion.h1>
@@ -52,7 +53,7 @@ export default function AnimatedGrid() {
               stiffness: 50, // Controls spring tightness
               damping: 20, // Reduces oscillation
             }}
-            className={`${card.bg} rounded-[20px] flex items-center justify-center text-center h-48 shadow-lg relative`}
+            className={`${card.bg} ${card.hbg} rounded-[20px] flex items-center justify-center text-center h-48 shadow-lg relative `}
           >
             {/* Background Image (Optional) */}
             {card.img && (

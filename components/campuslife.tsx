@@ -4,8 +4,8 @@ import { FadeUp } from "@/utils/fadeup";
 export default function CompusLife() {
   return (
     <>
-      <section className="container mx-auto bg-section_back mt-20">
-        <div className="flex justify-center items-center  text-2xl md:text-3xl lg:text-5xl text-slateblue py-6">
+      <section className="container mx-auto bg-section_back mt-20 font-open_sans">
+        <div className="flex justify-center items-center  text-2xl md:text-3xl lg:text-5xl text-slateblue py-6 font-raleway">
           Campus Life
         </div>
         <div className="py-8 lg:py-20 grid grid-cols-1 md:grid-cols-2 md:gap-12 space-y-6 md:space-y-0 md:px-16 lg:px-28">

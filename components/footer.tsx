@@ -13,11 +13,11 @@ import {
 export default function Footer() {
   return (
     <>
-      <footer className=" bg-footer_back px-4 md:px-16 lg:px-28 pt-12">
+      <footer className=" bg-footer_back px-4 md:px-16 lg:px-28 pt-12 font-open_sans">
         <div className="grid-cols-1 grid md:grid-cols-3 gap-8">
           <div className="md:hidden order-2 grid grid-cols-2">
           <div className="pl-6">
-            <h2 className="text-sm font-semibold mb-4 text-footer_color">
+            <h2 className="text-sm font-semibold mb-4 text-footer_color font-raleway">
               Useful Links
             </h2>
             <div className="mb-4">
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="pl-6">
-            <h2 className="text-sm font-semibold mb-4 text-footer_color">
+            <h2 className="text-sm font-semibold mb-4 text-footer_color font-raleway">
               Reach Out
             </h2>
             <ul>
@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
           </div>
           <div className="hidden md:grid">
-            <h2 className="text-lg font-semibold mb-4 text-footer_color">
+            <h2 className="text-lg font-semibold mb-4 text-footer_color font-raleway">
               Useful Links
             </h2>
             <div className="mb-4">
@@ -132,7 +132,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="hidden md:grid">
-            <h2 className="text-lg font-semibold text-footer_color">
+            <h2 className="text-lg font-semibold text-footer_color font-raleway">
               Reach Out
             </h2>
             <ul>
@@ -164,7 +164,7 @@ export default function Footer() {
               <Search className="absolute right-4 top-3 text-gray-500" />
             </div>
             <div className="grid md:hidden text-center pt-12 border-b border-footer_border">
-              <h2 className="text-lg font-semibold mb-4 text-footer_color">Find us Online</h2>
+              <h2 className="text-lg font-semibold mb-4 text-footer_color font-raleway">Find us Online</h2>
             </div>
             <div className="flex space-x-6 text-footer_color text-3xl my-6 justify-center items-center">
               <a href="#" target="_blank" rel="noopener noreferrer">

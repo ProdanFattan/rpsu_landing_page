@@ -2,11 +2,11 @@ import Image from "next/image";
 export default function Collabrations() {
   return (
     <>
-      <section className="container mx-auto bg-section_back px-4 md:px-16 lg:px-28 pt-16">
-        <h1 className=" text-slateblue lg:text-5xl text-2xl flex justify-center items-center">
+      <section className="container mx-auto bg-section_back px-4 md:px-16 lg:px-28 pt-16 font-open_sans">
+        <h1 className=" text-slateblue lg:text-5xl text-2xl flex justify-center items-center font-raleway">
           Accrediatation & Collaboration
         </h1>
-        <div className="flex justify-center items-center lg:py-14 py-8">
+        <div className="flex justify-center items-center lg:py-14 py-8 font-raleway">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-6">
           <div>
             <ul>

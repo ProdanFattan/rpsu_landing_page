@@ -75,7 +75,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="absolute md:top-8 left-1/2 transform -translate-x-1/2 bg-white backdrop-blur-lg bg-opacity-20 md:rounded-[30px] z-50 md:px-6 py-3 w-full xl:w-[1143px] xl:h-[78px] flex gap-4">
+    <nav className="absolute md:top-8 left-1/2 transform -translate-x-1/2 bg-white backdrop-blur-lg bg-opacity-20 md:rounded-[30px] z-50 md:px-6 py-3 w-full xl:w-[1143px] xl:h-[78px] flex gap-4 font-raleway">
       <div className="w-[267px] h-[32px] md:w-[430px] md:h-[56px]">
         <img src="/logo.png" alt="Logo" />
       </div>

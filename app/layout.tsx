@@ -1,6 +1,53 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localfont from "next/font/local";
 import "./globals.css";
+
+const raleway = localfont({
+  src: [
+    {
+      path: "../public/fonts/Raleway-VariableFont_wght.ttf",
+    },
+  ],
+
+  variable: "--font-raleway",
+});
+const open_sans = localfont({
+  src: [
+    {
+      path: "../public/fonts/OpenSans-VariableFont_wght.ttf",
+    },
+  ],
+
+  variable: "--font-open-sans",
+});
+const notable = localfont({
+  src: [
+    {
+      path: "../public/fonts/Notable-Regular.ttf",
+    },
+  ],
+
+  variable: "--font-notable",
+});
+const Poiret = localfont({
+  src: [
+    {
+      path: "../public/fonts/PoiretOne-Regular.ttf",
+    },
+  ],
+
+  variable: "--font-poiret",
+});
+const montserrat = localfont({
+  src: [
+    {
+      path: "../public/fonts/Montserrat-VariableFont_wght.ttf",
+    },
+  ],
+
+  variable: "--font-montserrat",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${raleway.variable} ${open_sans.variable} ${notable.variable} ${Poiret.variable} ${montserrat.variable}`}
       >
         {children}
       </body>

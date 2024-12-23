@@ -4,18 +4,19 @@ export default function Banner() {
       <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('/banner.webp')" }}>
         <div className="absolute inset-0 "></div>
         <div className="relative z-10 container mx-auto flex flex-col items-start justify-center h-full px-4 text-center">
-          <h1 className="text-2xl md:text-[64px] font-bold text-white md:mb-14 md:pl-2">
+          <h1 className="text-2xl lg:text-[64px] font-bold text-white lg:mb-10 lg:pl-2 font-montserrat">
             Admission
           </h1>
-          <p className="text-white text-3xl md:text-[96px] md:mb-14">
+          <p className="text-white text-3xl lg:text-[96px] lg:mb-14 font-notable">
             SPRING
           </p>
-          <p className="text-white text-3xl md:text-[96px] mb-2 pl-6 md:pl-16">
+          <p className="text-white text-3xl lg:text-[96px] lg:mb-8 font-Poiret">
             2025
           </p>
           
-          <a href="#explore" className="mt-8 text-white underline hover:text-purple-200">
-            Explore More
+          <a href="#explore">
+            <button className="lg:w-[190px] lg:h-[62px] hover:bg-btn_clr rounded-[50px] bg-white backdrop-blur-lg bg-opacity-30 text-white 2xl:text-[20px]">Apply now</button>
+            
           </a>
         </div>
       </div>

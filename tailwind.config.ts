@@ -9,11 +9,11 @@ export default {
   theme: {
     extend: {
       animation: {
-        slide: 'slide 10s linear infinite',
+        marquee: 'marquee 20s linear infinite',
       },
       keyframes: {
-        slide: {
-          '0%': { transform: 'translateX(0)' },
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
       },
@@ -30,6 +30,13 @@ export default {
         card_bg: "#939C4D",
         video_hover: "#939C4D",
       },
+      fontFamily: {
+        raleway: ['var(--font-raleway)'],
+        open_sans: ['var(--font-open-sans)'],
+        notable: ['var(--font-notable)'],
+        Poiret: ['var(--font-poiret)'],
+        montserrat: ['var(--font-montserrat)'],
+      }
     },
   },
   plugins: [],

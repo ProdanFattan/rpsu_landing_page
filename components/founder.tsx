@@ -1,6 +1,6 @@
 export default function FounderSection() {
     return (
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-[430px] h-[248px] md:w-full md:h-screen overflow-hidden">
         {/* Background Video */}
         <video
           autoPlay
@@ -14,11 +14,11 @@ export default function FounderSection() {
   
         {/* Content Overlay */}
         <div className="absolute inset-0 bg-video_hover flex flex-col items-start justify-center text-white text-center transition-opacity duration-500 opacity-0 hover:opacity-35 px-6 ">
-          <h1 className="text-3xl lg:text-5xl font-bold mb-4 px-28">Our Founder</h1>
-          <h2 className="text-xl lg:text-3xl mb-6 pl-28">
+          <h1 className="text-[20px] lg:text-5xl mb-4 px-28 font-raleway">Our Founder</h1>
+          <h2 className="text-[11px] lg:text-3xl md:mb-6 pl-28 font-raleway">
             Rai Bahadur Ranada Prasad Shaha
           </h2>
-          <p className="text-sm lg:text-lg text-start mb-8 px-28">
+          <p className="text-[10px] lg:text-lg text-start mb-8 md:px-28 font-open_sans">
             Rai Bahadur Ranada Prasad Shaha as a true son of this soil, a man
             extraordinaire, whose life's work and achievements are beyond
             comparison. Not only did he sacrifice his life for his beloved
@@ -27,8 +27,8 @@ export default function FounderSection() {
             June 1947 with the mission of providing exclusive service to the
             suffering humanity.
           </p>
-          <div className="px-28">
-          <button className="px-6 py-2 bg-white text-black rounded-md shadow-md hover:bg-gray-200">
+          <div className="md:px-28">
+          <button className="md:px-6 md:py-2 bg-white text-black rounded-md shadow-md hover:bg-gray-200 w-[81px] h-[22px] text-[10px] md:w-[181px] md:h-[51px] md:text-[16px]">
             See more
           </button>
           </div>

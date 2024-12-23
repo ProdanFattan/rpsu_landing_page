@@ -259,10 +259,10 @@ export default function CardCarousel() {
               key={index}
               className="lg:w-[322px] lg:h-[424px] bg-section_back rounded-lg p-6 mx-2 text-center shadow-lg lg:rounded-[50px] w-[178px] h-[183px]"
             >
-              <h3 className="font-semibold text-card_bg lg:w-[253px] lg:h-[180px] lg:text-[36px] text-center pt-4">
+              <h3 className="font-semibold text-card_bg lg:w-[253px] lg:h-[180px] lg:text-[36px] text-center pt-4 font-raleway">
                 {card.title}
               </h3>
-              <p className="text-sm text-gray-700 lg:w-[249px] lg:h-[158px] lg:text-[16px] text-center pt-4">
+              <p className="text-sm text-gray-700 lg:w-[249px] lg:h-[158px] lg:text-[16px] text-center pt-4 font-open_sans">
                 {card.description}
               </p>
             </div>
@@ -271,10 +271,10 @@ export default function CardCarousel() {
           <div
             className="lg:w-[322px] lg:h-[424px] bg-section_back rounded-lg p-6 mx-2 text-center shadow-lg lg:rounded-[50px] w-[178px] h-[183px]"
           >
-            <h3 className="font-semibold text-card_bg lg:w-[253px] lg:h-[180px] lg:text-[36px] text-center">
+            <h3 className="font-semibold text-card_bg lg:w-[253px] lg:h-[180px] lg:text-[36px] text-center font-raleway">
               {cards[0].title}
             </h3>
-            <p className="text-sm text-gray-700 lg:w-[249px] lg:h-[158px] lg:text-[16px] text-center mt-6">
+            <p className="text-sm text-gray-700 lg:w-[249px] lg:h-[158px] lg:text-[16px] text-center mt-6 font-open_sans">
               {cards[0].description}
             </p>
           </div>
