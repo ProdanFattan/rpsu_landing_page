@@ -29,7 +29,7 @@ export default function FounderSection() {
           </p>
           <div className="md:px-28">
           <button className="md:px-6 md:py-2 bg-white text-black rounded-md shadow-md hover:bg-gray-200 w-[81px] h-[22px] text-[10px] md:w-[181px] md:h-[51px] md:text-[16px]">
-            See more
+            <a href="/about/founder">See more</a>
           </button>
           </div>
         </div>

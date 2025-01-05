@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 
 function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -32,7 +33,6 @@ function Navbar() {
       { label: "RPSU Policies", href: "/news-events/policies" },
     ],
     about: [
-      
       { label: "History", href: "/about/history" },
       { label: "Our Founder", href: "/about/founder" },
       { label: "Vision", href: "/about/vision" },
@@ -59,9 +59,12 @@ function Navbar() {
 
   return (
     <nav className="absolute md:top-8 left-1/2 transform -translate-x-1/2 bg-white backdrop-blur-lg bg-opacity-20 md:rounded-[30px] z-50 md:px-6 py-3 w-full xl:w-[1143px] xl:h-[78px] flex gap-4 font-raleway">
-      <div className="w-[267px] h-[32px] md:w-[430px] md:h-[56px]">
-        <img src="/logo.png" alt="Logo" />
-      </div>
+      <Link href={"/"}>
+        <div className="w-[267px] h-[32px] md:w-[430px] md:h-[56px]">
+          <img src="/logo.png" alt="Logo" />
+        </div>
+      </Link>
+
       <ul className="hidden md:flex space-x-6  text-slateblue items-center justify-center lg:pt-1">
         {Object.keys(menus).map((menu) => (
           <li
@@ -93,7 +96,14 @@ function Navbar() {
             )}
           </li>
         ))}
-        <li className="relative lg:w-[119px] lg:h-[45px] text-center items-center justify-center lg:pt-2">ERP</li>
+        <li className="relative lg:w-[119px] lg:h-[45px] text-center items-center justify-center lg:pt-2">
+          <a
+            href="https://103.191.178.77:8081/rpsu"
+            className="hover:text-btn_clr"
+          >
+            ERP
+          </a>
+        </li>
       </ul>
       <button
         className="block md:hidden text-purple-800 focus:outline-none pl-[80px]"
@@ -169,7 +179,9 @@ function Navbar() {
                 )}
               </li>
             ))}
-            <li className="w-full text-left hover:text-btn_clr capitalize">ERP</li>
+            <li className="w-full text-left hover:text-btn_clr capitalize">
+              <a href="https://103.191.178.77:8081/rpsu">ERP</a>
+            </li>
           </ul>
         </motion.div>
       )}
