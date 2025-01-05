@@ -75,8 +75,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${raleway.variable} ${open_sans.variable} ${notable.variable} ${Poiret.variable} ${montserrat.variable}`}
       >
+        <div className=" mx-auto overflow-hidden bg-section_back">
         <Navbar />
         {children}
+        </div>
       </body>
     </html>
   );

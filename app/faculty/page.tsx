@@ -12,7 +12,7 @@ const ProfilePage = () => {
     };
   return (
     <>
-    <div className="mx-auto bg-section_back md:pt-32 pt-6">
+    <div className="md:pt-32 pt-6">
       {/* Main Section */}
       <div className="bg-section_back rounded-lg container mx-auto hidden md:block">
         <div className="flex flex-row">
@@ -46,7 +46,7 @@ const ProfilePage = () => {
               Kumudini Welfare Trust of Bengal Ltd.
               </p>
             </section>
-            <div className="border-t-2 border-btn_clr w-[800px] mt-2 mb-4"></div>
+            <div className="border-t-2 border-btn_clr w-full mt-2 mb-4"></div>
 
             <section className="mb-6">
               <h2 className="text-[20px] font-semibold font-raleway text-gray-800">Overview</h2>

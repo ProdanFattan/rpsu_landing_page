@@ -40,7 +40,7 @@ function Navbar() {
       { label: "Mission", href: "/about/vision" },
       { label: "Our Values", href: "/about/vision" },
       { label: "Why Study at RPSU", href: "/about/why-study" },
-      { label: "Chairman BOT", href: "/about/managing-director" },
+      { label: "Chairman BOT", href: "/about/chairman-bot" },
       { label: "Vice Chancellor", href: "/about/vice-chancellor" },
       // { label: "Administration", href: "/about/administration" },
       // { label: "Contact", href: "/about/contact" },

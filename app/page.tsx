@@ -11,7 +11,6 @@ import NoticeSection from "@/components/notice_section"
 export default function Home(){
   return(
     <>
-    <div className=" mx-auto overflow-hidden bg-section_back">
     <Banner/>
     <NoticeSection/>
     <CardCarousel/>
@@ -20,7 +19,6 @@ export default function Home(){
     <AnimatedGrid/>
     <Collabrations/>
     <Footer/> 
-    </div>
     </>
   )
 }
