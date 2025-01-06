@@ -98,7 +98,7 @@ function Navbar() {
         ))}
         <li className="relative lg:w-[119px] lg:h-[45px] text-center items-center justify-center lg:pt-2">
           <a
-            href="https://103.191.178.77:8081/rpsu"
+            href=""
             className="hover:text-btn_clr"
           >
             ERP
@@ -180,7 +180,7 @@ function Navbar() {
               </li>
             ))}
             <li className="w-full text-left hover:text-btn_clr capitalize">
-              <a href="https://103.191.178.77:8081/rpsu">ERP</a>
+              <a href="">ERP</a>
             </li>
           </ul>
         </motion.div>

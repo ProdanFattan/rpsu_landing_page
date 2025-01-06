@@ -107,7 +107,7 @@ const ProfilePage = () => {
             </div>
 
             {/* Right section */}
-            <div className="text-black flex flex-col items-center mx-10  lg:pt-6 md:w-[400px] ">
+            <div className="text-black flex flex-col items-center md:mx-10  lg:pt-6 md:w-[400px] ">
               <div>
                 <img
                   src="/founder_pic.jpg" // Replace with actual image source
