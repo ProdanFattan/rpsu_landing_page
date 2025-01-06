@@ -4,13 +4,6 @@ import { dataset } from "./dataset";
 
 const ProfilePage = ({ params }) => {
   const profile = dataset.find((item) => item.slug === params.slug);
-  if (!profile) {
-    return (
-      <div className="text-center py-10">
-        <h1 className="text-2xl font-bold">Profile not found</h1>
-      </div>
-    );
-  }
 
   return (
     <>
@@ -20,7 +13,7 @@ const ProfilePage = ({ params }) => {
             {/*left side*/}
             <div className="text-black flex flex-col items-center py-6 md:py-10 md:w-[400px]">
               <img
-                src={profile.image} // Replace with actual image source
+                src={profile.image} 
                 alt={profile.name}
                 className="w-[150px] h-[150px] md:w-[228px] md:h-[230px] rounded-[20px] md:rounded-[40px] border-4 border-white mb-4"
               />
@@ -47,6 +40,9 @@ const ProfilePage = ({ params }) => {
                 </p>
                 <p className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600 text-center md:text-left">
                   R. P. Shaha University
+                </p>
+                <p className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600 text-center md:text-left">
+                  Email: {profile.email}
                 </p>
               </section>
               <div className="border-t-2 border-btn_clr w-full mt-2 mb-4"></div>
@@ -101,7 +97,6 @@ const ProfilePage = ({ params }) => {
                           <p>{item.university_name}</p>
                           <p>{item.location}</p>
                           <p>{item.cgpa}</p>
-                          <p>{item.achievement}</p>
                           <p>{item.graduation_year}</p>
                         </li>
                       ))}
@@ -141,12 +136,6 @@ const ProfilePage = ({ params }) => {
                       profile.research_works.map((item, index) => (
                         <li key={index}>
                           <p>{item.title}</p>
-                          <p>{item.authors}</p>
-                          <p>{item.year}</p>
-                          <p>{item.journal_or_conference}</p>
-                          <p>{item.volume}</p>
-                          <p>{item.pages}</p>
-                          <p>{item.indexed}</p>
                         </li>
                       ))}
                   </ul>
