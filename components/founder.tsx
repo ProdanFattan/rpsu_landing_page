@@ -13,12 +13,12 @@ export default function FounderSection() {
         </video>
   
         {/* Content Overlay */}
-        <div className="absolute inset-0 bg-video_hover flex flex-col items-start justify-center text-white text-center transition-opacity duration-500 opacity-0 hover:opacity-35 px-6 ">
+        <div className="absolute inset-0 bg-video_hover flex flex-col items-start justify-center text-white text-center transition-opacity duration-500 opacity-0 hover:opacity-100 px-6 ">
           <h1 className="text-[20px] lg:text-5xl mt-10 md:mb-4 md:px-28 font-raleway">Our Founder</h1>
           <h2 className="text-[11px] lg:text-3xl md:mb-6 md:pl-28 font-raleway">
             Rai Bahadur Ranada Prasad Shaha
           </h2>
-          <p className="text-[10px] lg:text-lg text-start md:mb-8 md:px-28 font-open_sans">
+          <p className="text-[8px] lg:text-lg text-start md:mb-8 md:px-28 font-open_sans mr-8 md:mr-0">
             Rai Bahadur Ranada Prasad Shaha as a true son of this soil, a man
             extraordinaire, whose life's work and achievements are beyond
             comparison. Not only did he sacrifice his life for his beloved

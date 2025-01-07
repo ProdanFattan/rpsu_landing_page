@@ -1,7 +1,14 @@
+"use client"
 import Footer from "@/components/footer";
 import React from "react";
 
 const ProfilePage = () => {
+  const handleScrollTo = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <>
       <div className="md:pt-32 pt-6">
@@ -16,9 +23,9 @@ const ProfilePage = () => {
               />
               <div className="font-raleway font-bold text-footer_back text-[14px] md:text-[16px] text-center md:text-left hidden md:block pr-24">
                 <ul>
-                  <li className="py-3 md:py-6">Overview</li>
-                  <li className="py-3 md:pb-6">Early life</li>
-                  <li className="py-3 md:pb-6">Career</li>
+                  <li className="py-3 md:py-6 cursor-pointer" onClick={() => handleScrollTo("overview")}>Overview</li>
+                  <li className="py-3 md:pb-6 cursor-pointer" onClick={() => handleScrollTo("early-life")}>Early life</li>
+                  <li className="py-3 md:pb-6 cursor-pointer" onClick={() => handleScrollTo("career")}>Career</li>
                 </ul>
               </div>
             </div>
@@ -42,22 +49,25 @@ const ProfilePage = () => {
               {/* Other Sections */}
               {[
                 {
+                  id: "overview",
                   title: "Overview",
                   content:
                     "Rajiv Prasad Shaha is a prominent educational leader, and entrepreneur from Bangladesh, dedicated to advancing education and social welfare in the country. As the grandson of the esteemed Ranada Prasad Shaha, Managing Director of the Kumudini Welfare Trust, Mr. Rajiv carries forward a rich legacy of philanthropy and service to humanity. His commitment to providing accessible education and healthcare has significantly impacted the lives of countless individuals and communities in Bangladesh.",
                 },
                 {
+                  id: "early-life",
                   title: "Early Life",
                   content: "Rajiv Prasad Shaha was born into a family deeply rooted in values of compassion, service, and philanthropy. Growing up as the grandson of Ranada Prasad Shaha, he was inspired by his family's dedication to social welfare. Despite the tragedies faced by his family during the Bangladesh Liberation War, including the abduction of his grandfather and father, Mr. Rajiv developed a strong resolve to continue their legacy of humanitarian work.",
                 },
                 {
+                  id: "career",
                   title: "Career",
                   content: "Rajiv Prasad Shaha has played a pivotal role in the operations and management of the Kumudini Welfare Trust, which oversees several educational and healthcare institutions in Bangladesh. His career has been marked by significant contributions to the development and expansion of these institutions, focusing on providing quality education and healthcare to underserved populations. Rajiv has been instrumental in establishing and managing R. P. Shaha University, which aims to provide high-quality higher education in various disciplines.",
                 },
                 
               ].map((section, index) => (
-                <section className="mb-6" key={index}>
-                  <h2 className="text-[18px] md:text-[20px] font-bold font-raleway text-gray-800">
+                <section className="mb-6" key={index} id={section.id}>
+                  <h2 className="text-[18px] md:text-[20px] font-bold font-raleway text-gray-800" >
                     {section.title}
                   </h2>
                   <div className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600">

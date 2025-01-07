@@ -1,7 +1,14 @@
+"use client";
 import Footer from "@/components/footer";
 import React from "react";
 
 const ProfilePage = () => {
+  const handleScrollTo = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <>
@@ -17,39 +24,52 @@ const ProfilePage = () => {
               />
               <div className="font-raleway font-bold text-footer_back text-[14px] md:text-[16px] text-center md:text-left hidden md:block">
                 <ul>
-                  <li className="py-3 md:py-6">Overview</li>
-                  <li className="py-3 md:pb-6">Professional Summary</li>
-                  <li className="py-3 md:pb-6">Notable Achievements</li>
-                  <li className="py-3 md:pb-6">Awards and Honors</li>
-                  <li className="py-3 md:pb-6">Education</li>
+                  <li
+                    className="py-3 md:py-6 cursor-pointer"
+                    onClick={() => handleScrollTo("overview")}
+                  >
+                    Overview
+                  </li>
+                  <li
+                    className="py-3 md:pb-6 cursor-pointer"
+                    onClick={() => handleScrollTo("professional-summary")}
+                  >
+                    Professional Summary
+                  </li>
+                  <li
+                    className="py-3 md:pb-6 cursor-pointer"
+                    onClick={() => handleScrollTo("notable-achievements")}
+                  >
+                    Notable Achievements
+                  </li>
+                  <li
+                    className="py-3 md:pb-6 cursor-pointer"
+                    onClick={() => handleScrollTo("awards-and-honors")}
+                  >
+                    Awards and Honors
+                  </li>
+                  <li
+                    className="py-3 md:pb-6 cursor-pointer"
+                    onClick={() => handleScrollTo("education")}
+                  >
+                    Education
+                  </li>
                 </ul>
               </div>
             </div>
 
             {/* Right Section */}
             <div className="md:w-full md:p-6">
-              {/* Overview */}
-              <section className="mb-6">
-                <h2 className="text-[20px] md:text-[32px] font-light font-raleway text-gray-800 text-center md:text-left">
-                  Professor Dr. Manindra Kumar Roy
-                </h2>
-                <p className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600 text-center md:text-left">
-                  Entrepreneur | Educational Leader | Social worker
-                </p>
-                <p className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600 text-center md:text-left">
-                  Kumudini Welfare Trust of Bengal Ltd.
-                </p>
-              </section>
-              <div className="border-t-2 border-btn_clr w-full mt-2 mb-4"></div>
-
-              {/* Other Sections */}
+              {/* Sections */}
               {[
                 {
+                  id: "overview",
                   title: "Overview",
                   content:
                     "Dr. Manindra Kumar Roy, a distinguished academic and visionary leader, serves as the Vice-Chancellor of Ranada Prasad Shaha University (RPSU). With an illustrious career spanning over five decades, he has made remarkable contributions to academia, research, and institutional development in Bangladesh and abroad.",
                 },
                 {
+                  id: "professional-summary",
                   title: "Professional Summary",
                   content: (
                     <ul className="list-disc pl-5">
@@ -83,6 +103,7 @@ const ProfilePage = () => {
                   ),
                 },
                 {
+                  id: "notable-achievements",
                   title: "Notable Achievements",
                   content: (
                     <>
@@ -119,6 +140,7 @@ const ProfilePage = () => {
                   ),
                 },
                 {
+                  id: "awards-and-honors",
                   title: "Awards and Honors",
                   content: (
                     <ul className="list-disc pl-5">
@@ -136,6 +158,7 @@ const ProfilePage = () => {
                   ),
                 },
                 {
+                  id: "education",
                   title: "Education",
                   content: (
                     <ul className="list-disc pl-5">
@@ -154,7 +177,7 @@ const ProfilePage = () => {
                   ),
                 },
               ].map((section, index) => (
-                <section className="mb-6" key={index}>
+                <section className="mb-6" id={section.id} key={index}>
                   <h2 className="text-[18px] md:text-[20px] font-bold font-raleway text-gray-800">
                     {section.title}
                   </h2>
