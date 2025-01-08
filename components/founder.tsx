@@ -1,6 +1,6 @@
 export default function FounderSection() {
     return (
-      <div className="relative w-[430px] h-[248px] md:w-full md:h-screen overflow-hidden">
+      <div className="relative w-[430px] h-[248px] md:w-full md:h-screen overflow-hidden lg:mt-10">
         {/* Background Video */}
         <video
           autoPlay

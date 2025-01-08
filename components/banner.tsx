@@ -10,7 +10,7 @@ export default function Banner() {
           <p className="text-white text-3xl lg:text-[96px] lg:mb-14 font-notable">
             SPRING
           </p>
-          <p className="text-white text-3xl lg:text-[96px] lg:mb-8 font-Poiret">
+          <p className="text-white text-3xl lg:text-[96px] lg:mb-8 lg:pb-6 font-Poiret">
             2025
           </p>
           

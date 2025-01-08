@@ -139,7 +139,7 @@ const ProfilePage = () => {
                     Shaha
                   </li>
                   <li className="py-3 md:py-3">
-                    <span className="font-semibold">Born: </span>pre15 November
+                    <span className="font-semibold">Born: </span>15 November
                     1896
                   </li>
                   <li className="py-3 md:py-3">
@@ -156,7 +156,7 @@ const ProfilePage = () => {
                   </li>
                   <li className="py-3 md:py-3">
                     <span className="font-semibold">Awards: </span>Independence
-                    Award (1978), British War Medal (1919)Sword of Honour (1919)
+                    Award (1978), British War Medal (1919), Sword of Honour (1919)
                   </li>
                   <li className="py-3 md:py-3">
                     <span className="font-semibold">Battles/wars: </span>World
