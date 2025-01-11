@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localfont from "next/font/local";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import "./globals.css";
 
 const raleway = localfont({
@@ -79,6 +80,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         </div>
+        <Footer/>
       </body>
     </html>
   );

@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { div } from "framer-motion/client";
 import Admission from "@/components/admission";
 import About from "@/components/about";
 

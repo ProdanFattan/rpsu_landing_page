@@ -1,6 +1,6 @@
-import { title } from "process";
 
-export const dataset = [
+
+const dataset = [
     {
       _id: "ObjectId1",
       name: "Trina Saha",
@@ -718,3 +718,4 @@ export const dataset = [
     
     
   ];
+  export default dataset;
