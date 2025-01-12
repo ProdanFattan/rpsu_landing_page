@@ -12,14 +12,15 @@ const About = () => {
       { label: "Chairman BOT", href: "/about/chairman-bot" },
   ];
   const menus2 = [
-    { label: "Board of Trustees", href: "/about/board-of-trustees" },
+    { label: "Board of Trustees", href: "/about/authority/board-of-trustees" },
     { label: "Vice Chancellor", href: "/about/vice-chancellor" },
-    { label: "Treasurer", href: "/about/treasurer" },
-    { label: "Synidicate", href: "/about/synidicate" },
-    { label: "Academic Council", href: "/about/academic-council" },
-    { label: "IQAC", href: "/about/iqac" },
-    { label: "Finance Committee", href: "/about/finance-committee" },
-    { label: "Complaint Committee", href: "/about/complaint-committee" },
+    { label: "Treasurer", href: "/about/authority/treasurer" },
+    { label: "Syndicate", href: "/about/authority/syndicate" },
+    { label: "Academic Council", href: "/about/authority/academic-council" },
+    { label: "IQAC", href: "https://iqac.rpsu.edu.bd/" },
+    { label: "Finance Committee", href: "/about/authority/finance-committee" },
+    { label: "Disciplinary Committee", href: "/about/authority/disciplinary-committee" },
+    { label: "Complaint Committee", href: "/about/authority/complaint-committee" },
   ];
   const menus3 = [
     { label: "Registrar's Office", href: "/about/registrar" },

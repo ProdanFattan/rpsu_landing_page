@@ -49,7 +49,7 @@ function Navbar() {
 
   const menus: any = {
     admissions: [{ label: "Apply Now", href: "/admission/apply-now" },
-      { label: "Academics Overview", href: "/admission/academics-overview" },
+      { label: "Academics Overview", href: "/academics" },
       { label: "Academic Calendar", href: "/admission/calendar" },
       { label: "Admission Requirements", href: "/admission/requirements" },
       { label: "Tuition & Other Fees", href: "/admission/tuition-fees" },

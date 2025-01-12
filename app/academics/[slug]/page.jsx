@@ -1,6 +1,8 @@
 import React from "react";
-import schools from "../../data/academicdata";
-const AcademicsPage = () => {
+import academicDataSet from "../../data/academicdata";
+const AcademicsPage = ({params}) => {
+  const {slug} = params;
+  const school = academicDataSet.find((item) => item.slug === slug);
   return (
     <div>
       <div
@@ -8,13 +10,13 @@ const AcademicsPage = () => {
         style={{ backgroundImage: "url('/academics.webp')" }}
       >
         <span className="h-[290px] md:h-screen justify-center items-center text-center flex font-raleway text-[30px] md:text-[90px] font-bold text-white">
-          Academics
+          {school.name}
         </span>
       </div>
       <div className="bg-section_back container mx-auto ">
         <div className="md:pt-16 md:pl-8 pt-8 pl-4 flex flex-col pr-1 md:pr-0">
           <span className="font-raleway md:text-[40px] text-footer_back font-light text-[24px] md:pb-6 pb-3">
-            Excellence in Education
+            Welcome to {school.name} at RPSU
           </span>
           <span className="font-open_sans md:text-[20px] text-black">
             At R. P. Shaha University (RPSU), we believe education is about more
@@ -27,11 +29,11 @@ const AcademicsPage = () => {
         </div>
         <div className="md:pt-16 pt-8">
           <span className="md:text-[40px] text-[24px] font-open_sans text-footer_back md:pl-8 pl-4 font-light">
-            Schools
+            Programs
           </span>
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 md:pt-8 md:pl-8 pt-4 pb-20">
-        {(schools.map((school)=>((school.department || school.programs)?.map((item, itemIndex) => (
+        <div className="grid md:grid-cols-3 grid-cols-1 md:pt-8 md:pl-8 pt-4 pb-20 ">
+        {(school.department || school.programs)?.map((item, itemIndex) => (
             <a
               key={itemIndex}
               href={`/${item.slug}`}
@@ -44,44 +46,13 @@ const AcademicsPage = () => {
                   alt={item.name}
                 />
               </div>
-              <span className="font-raleway font-normal md:font-semibold md:text-[24px] text-[18px] text-footer_back">
+              <span className="font-raleway font-normal md:font-semibold md:text-[18px] text-[18px] text-footer_back">
                 {item.name}
               </span>
             </a>
-          )))))}
+          ))}
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-2 pb-8 font-raleway md:text-[36px] h-[800px] text-[24px] text-white font-bold ">
-          <div className=" order-1 md:order-none">
-            <img
-              className="w-full h-full object-cover"
-              src="/academics.webp"
-              alt="Group of students"
-            />
-          </div>
-          <div className=" bg-btn_clr hover:bg-footer_back text-center md:pt-[150px] pt-[120px] order-2 md:order-none ">
-            <span className="">Admission <br />Requirments </span>
-          </div>
-          <div className="order-3 md:order-none">
-            <img
-              className="w-full h-full object-cover"
-              src="/academics.webp"
-              alt="Group of students"
-            />
-          </div>
-          <div className=" bg-btn_clr hover:bg-footer_back text-center md:pt-[150px] pt-[100px] order-4 md:order-none">
-            <span className="">Tuition <br />Fees </span>
-          </div>
-          <div className="order-5 md:order-none">
-            <img
-              className="w-full h-full object-cover"
-              src="/academics.webp"
-              alt="Group of students"
-            />
-          </div>
-          <div className="bg-btn_clr hover:bg-footer_back text-center md:pt-[150px] pt-[80px] order- md:order-none">
-            <span className="">Campus <br />Events</span>
-          </div>
-        </div>
+        
       </div>
     </div>
   );

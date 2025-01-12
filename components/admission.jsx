@@ -3,22 +3,21 @@ import React from "react";
 const Admission = () => {
   const menus = [
     { label: "Apply Now", href: "/admission/apply-now" },
-      { label: "Academics Overview", href: "/admission/academics-overview" },
+      { label: "Academics Overview", href: "/academics" },
       { label: "Academic Calendar", href: "/admission/calendar" },
       { label: "Admission Requirements", href: "/admission/requirements" },
       { label: "Tuition & Other Fees", href: "/admission/tuition-fees" },
-      { label: "Apply Online", href: "/admission/alumni" },
       { label: "Waiver/Scholarship", href: "/admission/scholarship" },
       { label: "International Admission", href: "/admission/international" },
       { label: "Result Verification", href: "/admission/international" },
   ];
   const menus2 = [
-    { label: "School of Engineering", href: "/admission/school-of-engineering" },
-    { label: "School of Business", href: "/admission/school-of-business" },
-    { label: "School of Life Science & Health", href: "/admission/school-of-life-science-&-health" },
-    { label: "School of Arts & Social Science", href: "/admission/school-of-arts-&-social-science" },
-    { label: "Kumudini School of Fashion & Design", href: "/admission/kumudini-school-of-fashion-&-design" },
-    { label: "Kumudini School of Public Health", href: "/admission/kumudini-school-of-public-health" },
+    { label: "School of Engineering", href: "/academics/school-of-engineering" },
+    { label: "School of Business", href: "/academics/school-of-business" },
+    { label: "School of Life Science & Health", href: "/academics/school-of-life-sciences-and-health" },
+    { label: "School of Arts & Social Science", href: "/academics/school-of-arts-and-social-science" },
+    { label: "Kumudini School of Fashion & Design", href: "/academics/kumudini-school-of-fashion-and-design" },
+    { label: "Kumudini School of Public Health", href: "/academics/kumudini-school-of-public-health" },
   ];
   const menus3 = [
     { label: "Business Administration", href: "/admission/business-administration" },

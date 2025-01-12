@@ -1,5 +1,6 @@
 import React from "react";
 import schools from "../data/academicdata";
+import AcademySection from "../../components/academySection";
 const AcademicsPage = () => {
   return (
     <div>
@@ -31,58 +32,27 @@ const AcademicsPage = () => {
           </span>
         </div>
         <div className="grid md:grid-cols-3 grid-cols-1 md:pt-8 md:pl-8 pt-4 pb-20">
-  {schools.map((school, index) => (
-    <a 
-      key={index} 
-      href={`/academics/${school.slug}`} 
-      className="px-2 text-center pb-8 block"
-    >
-      <div className="pb-2">
-        <img
-          className="rounded-[20px] md:w-96 md:h-60 h-[230px] transform transition duration-500 md:hover:scale-110"
-          src="/academics.webp"
-          alt={school.name}
-        />
-      </div>
-      <span className="font-raleway font-normal md:font-semibold md:text-[24px] text-[18px] text-footer_back">
-        {school.name}
-      </span>
-    </a>
-  ))}
-</div>
-
-        <div className="grid md:grid-cols-3 grid-cols-2 pb-8 font-raleway md:text-[36px] h-[800px] text-[24px] text-white font-bold ">
-          <div className=" order-1 md:order-none">
-            <img
-              className="w-full h-full object-cover"
-              src="/academics.webp"
-              alt="Group of students"
-            />
-          </div>
-          <div className=" bg-btn_clr hover:bg-footer_back text-center md:pt-[150px] pt-[120px] order-2 md:order-none ">
-            <span className="">Admission <br />Requirments </span>
-          </div>
-          <div className="order-3 md:order-none">
-            <img
-              className="w-full h-full object-cover"
-              src="/academics.webp"
-              alt="Group of students"
-            />
-          </div>
-          <div className=" bg-btn_clr hover:bg-footer_back text-center md:pt-[150px] pt-[100px] order-4 md:order-none">
-            <span className="">Tuition <br />Fees </span>
-          </div>
-          <div className="order-5 md:order-none">
-            <img
-              className="w-full h-full object-cover"
-              src="/academics.webp"
-              alt="Group of students"
-            />
-          </div>
-          <div className="bg-btn_clr hover:bg-footer_back text-center md:pt-[150px] pt-[80px] order- md:order-none">
-            <span className="">Campus <br />Events</span>
-          </div>
+          {schools.map((school, index) => (
+            <a
+              key={index}
+              href={`/academics/${school.slug}`}
+              className="px-2 text-center pb-8 block"
+            >
+              <div className="pb-2">
+                <img
+                  className="rounded-[20px] md:w-96 md:h-60 h-[230px] transform transition duration-500 md:hover:scale-110"
+                  src="/academics.webp"
+                  alt={school.name}
+                />
+              </div>
+              <span className="font-raleway font-normal md:font-semibold md:text-[24px] text-[18px] text-footer_back">
+                {school.name}
+              </span>
+            </a>
+          ))}
         </div>
+        
+        <AcademySection/>
       </div>
     </div>
   );

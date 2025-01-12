@@ -17,6 +17,9 @@ export default {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
+      backgroundImage:{
+          "tab": "url('/academics.webp')"
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

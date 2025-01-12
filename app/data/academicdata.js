@@ -78,7 +78,7 @@ const academicDataSet = [
     }]
     },{
     "name": "School of Life Sciences & Health",
-    "slug": "school-of-life -sciences-and-health",
+    "slug": "school-of-life-sciences-and-health",
     "image": "/",
     "programs":[{
     "name": "Bachelor of Pharmacy",
