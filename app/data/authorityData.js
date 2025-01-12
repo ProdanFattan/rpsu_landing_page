@@ -471,7 +471,7 @@ const authorityData = [
       {
         name: "Aditi Roy",
         slug: "aditi-roy",
-        title: "Assistent Proctor",
+        title: "Assistant Proctor",
         History: "",
         image: "/aditi-roy.jpg",
       },

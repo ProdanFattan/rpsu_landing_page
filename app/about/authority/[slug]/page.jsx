@@ -11,7 +11,7 @@ function ExpandableCardDemo({ params }) {
   return (
     <>
       <div className="relative md:h-screen md:bg-cover h-[290px] mb-16 bg-cover bg-center" style={{ backgroundImage: `url('${authority.image}')` }}></div>
-      <ul className="mx-auto w-full grid grid-cols-1 md:grid-cols-4 items-start gap-4">
+      <ul className="mx-auto w-full grid grid-cols-1 md:grid-cols-4 items-start">
         {cards.map((card, index) => (
           <div
             key={card.title}
