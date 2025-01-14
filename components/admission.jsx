@@ -20,31 +20,31 @@ const Admission = () => {
     { label: "Kumudini School of Public Health", href: "/academics/kumudini-school-of-public-health" },
   ];
   const menus3 = [
-    { label: "Business Administration", href: "/admission/business-administration" },
+    { label: "Business Administration", href: "/admissions/faculty/business-administration" },
     {
       label: "Computer Science & Engineering",
-      href: "/admission/computer-science-&-engineering",
+      href: "/admissions/faculty/computer-science-and-engineering",
     },
-    { label: "Electrical & Electronic Engineering", href: "/admission/electrical-&-electronic-engineering" },
+    { label: "Electrical & Electronic Engineering", href: "/admissions/faculty/electrical-and-electronic-engineering" },
     {
       label: "Law",
-      href: "/admission/law",
+      href: "/admissions/faculty/law",
     },
-    { label: "English", href: "/admission/english" },
+    { label: "English", href: "/admissions/faculty/english" },
     {
       label: "Pharmacy",
-      href: "/admission/pharmacy",
+      href: "/admissions/faculty/pharmacy",
     },
     {
       label: "Fashion Design",
-      href: "/admission/fashion-design",
+      href: "/admissions/faculty/fashion-design",
     },
-    { label: "Public Health", href: "/admission/public-health" },
-    { label: "GED", href: "/admission/GED" },
+    { label: "Public Health", href: "/admissions/faculty/public-health" },
+    { label: "GED", href: "/admissions/faculty/ged" },
   ];
 
   return (
-    <div className="w-[750px] h-[330px] bg-section_back grid grid-cols-3 text-footer_back font-raleway text-[14px] pt-6 px-2">
+    <div className="w-[750px] h-[330px] bg-white grid grid-cols-3 text-footer_back font-raleway text-[14px] pt-6 px-2">
       <div>
         <ul
           key={menus}

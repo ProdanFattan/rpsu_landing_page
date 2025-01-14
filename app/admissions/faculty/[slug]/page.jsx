@@ -1,11 +1,12 @@
-import authorityData from "@/app/data/authorityData";
+import facultyData from "../../../data/facultyData";
 function ExpandableCardDemo({ params }) {
   const { slug } = params;
-  const authority = authorityData.find((item) => item.slug === slug);
-  const cards = authority.member.map((member) => ({
+  const faculty = facultyData.find((item) => item.slug === slug);
+  const cards = faculty.member.map((member) => ({
     title: member.name,
     description: member.title,
     src: member.image,
+    degree: member.degree,
   }));
 
   return (
@@ -16,7 +17,7 @@ function ExpandableCardDemo({ params }) {
       >
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="absolute inset-0 flex items-center justify-center text-white text-center font-raleway font-bold md:text-7xl text-3xl">
-          {authority.name}
+          {faculty.name}
         </div>
       </div>
       <div className="container mx-auto">
@@ -40,6 +41,9 @@ function ExpandableCardDemo({ params }) {
                 </h3>
                 <p className=" text-center md:text-left text-base">
                   {card.description}
+                </p>
+                <p className=" text-center text-base">
+                  {card.degree}
                 </p>
               </div>
             </div>

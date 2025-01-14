@@ -5,10 +5,10 @@ const About = () => {
     { label: "History", href: "/about/history" },
       { label: "Our Founder", href: "/about/founder" },
       { label: "Vision", href: "/about/vision" },
-      { label: "Our Goals", href: "/about/vision" },
-      { label: "Mission", href: "/about/vision" },
-      { label: "Our Values", href: "/about/vision" },
-      { label: "Why Study at RPSU", href: "/about/why-study" },
+      { label: "Our Goals", href: "/about/goals" },
+      { label: "Mission", href: "/about/mission" },
+      { label: "Our Values", href: "/about/values" },
+      { label: "Why Study at RPSU", href: "/about/why-study-at-rpsu" },
       { label: "Chairman BOT", href: "/about/chairman-bot" },
   ];
   const menus2 = [
@@ -23,33 +23,33 @@ const About = () => {
     { label: "Complaint Committee", href: "/about/authority/complaint-committee" },
   ];
   const menus3 = [
-    { label: "Registrar's Office", href: "/about/registrar" },
+    { label: "Registrar's Office", href: "/about/administration/registrar-office" },
     {
       label: "Controller of Examinations Office",
-      href: "/about/controller",
+      href: "/about/administration/controller-of-examinationss-office",
     },
-    { label: "Proctor's Office", href: "/about/proctor" },
+    { label: "Proctor's Office", href: "/about/administration/proctor-office" },
     {
       label: "Software Development Office",
-      href: "/about/software-development",
+      href: "/about/administration/software-development-office",
     },
-    { label: "Finance & Accounts Office", href: "/about/finance-accounts" },
+    { label: "Finance & Accounts Office", href: "/about/administration/finance-and-accounts-office" },
     {
       label: "Media & Public Relation Office",
-      href: "/about/media-public-relation",
+      href: "/about/administration/media-and-public-relation-office",
     },
     {
       label: "Vice Chancellor's Office",
-      href: "/about/vice-chancellor-office",
+      href: "/about/administration/vice-chancellor-office",
     },
-    { label: "Admissions Office", href: "/about/admissions" },
-    { label: "Library Personnel", href: "/about/library" },
-    { label: "HR Office", href: "/about/hr" },
-    { label: "Supporting Members", href: "/about/supporting-members" },
+    { label: "Admissions Office", href: "/about/administration/admission-office" },
+    { label: "Library Personnel", href: "/about/administration/library-personnel" },
+    { label: "HR Office", href: "/about/administration/hr-office" },
+    { label: "Supporting Members", href: "/about/administration/supporting-member" },
   ];
 
   return (
-    <div className="w-[750px] h-[350px] bg-section_back grid grid-cols-3 text-footer_back font-raleway text-[14px] pt-6 px-2">
+    <div className="w-[750px] h-[350px] bg-white grid grid-cols-3 text-footer_back font-raleway text-[14px] pt-6 px-2">
       <div>
         <ul
           key={menus}

@@ -37,7 +37,7 @@ const AcademicsPage = ({params}) => {
             <a
               key={itemIndex}
               href={`/${item.slug}`}
-              className="px-2 text-center pb-8 block"
+              className="px-2 2xl:text-start text-center pb-8 block"
             >
               <div className="pb-2">
                 <img

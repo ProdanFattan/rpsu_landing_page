@@ -184,7 +184,7 @@ const authorityData = [
   {
     name: "Academic Council",
     slug: "academic-council",
-    iamge: "/academic-council.webp",
+    image: "/academic-council.webp",
     member: [
       {
         name: "Dr. Manindra Kumar Roy",
