@@ -9,7 +9,7 @@ const HistoryPage = () => {
       >
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="absolute inset-0 flex items-center justify-center text-white text-center font-raleway font-bold md:text-7xl text-3xl">
-          Our Vision
+          Our Values
         </div>
       </div>
       <div className="container mx-auto font-open_sans text-footer_back md:text-[20px] text-[16px] md:px-0 px-4">

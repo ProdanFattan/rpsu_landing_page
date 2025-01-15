@@ -41,7 +41,7 @@ const AcademicsPage = () => {
               <div className="pb-2">
                 <img
                   className="rounded-[20px] md:w-96 md:h-60 h-[230px] transform transition duration-500 md:hover:scale-110"
-                  src="/academics.webp"
+                  src={school.image}
                   alt={school.name}
                 />
               </div>

@@ -7,7 +7,7 @@ const AcademicsPage = ({params}) => {
     <div>
       <div
         className="relative md:h-screen md:bg-cover h-[290px] bg-cover bg-center"
-        style={{ backgroundImage: "url('/academics.webp')" }}
+        style={{ backgroundImage: `url('${school.image}')` }}
       >
         <span className="h-[290px] md:h-screen justify-center items-center text-center flex font-raleway text-[30px] md:text-[90px] font-bold text-white">
           {school.name}
@@ -42,7 +42,7 @@ const AcademicsPage = ({params}) => {
               <div className="pb-2">
                 <img
                   className="rounded-[20px] md:w-96 md:h-60 h-[230px] transform transition duration-500 md:hover:scale-110"
-                  src="/academics.webp"
+                  src={item.image}
                   alt={item.name}
                 />
               </div>
