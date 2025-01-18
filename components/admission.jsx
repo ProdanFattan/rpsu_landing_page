@@ -4,9 +4,9 @@ const Admission = () => {
   const menus = [
     { label: "Apply Now", href: "/admission/apply-now" },
       { label: "Academics Overview", href: "/academics" },
-      { label: "Academic Calendar", href: "/admission/calendar" },
-      { label: "Admission Requirements", href: "/admission/requirements" },
-      { label: "Tuition & Other Fees", href: "/admission/tuition-fees" },
+      { label: "Academic Calendar", href: "/admissions/academic-calender" },
+      { label: "Admission Requirements", href: "/admissions/admission-requirements" },
+      { label: "Tuition & Other Fees", href: "/admissions/tuition-and-other-fees" },
       { label: "Waiver/Scholarship", href: "/admission/scholarship" },
       { label: "International Admission", href: "/admission/international" },
       { label: "Result Verification", href: "/admission/international" },
