@@ -7,7 +7,7 @@ const Admission = () => {
       { label: "Academic Calendar", href: "/admissions/academic-calender" },
       { label: "Admission Requirements", href: "/admissions/admission-requirements" },
       { label: "Tuition & Other Fees", href: "/admissions/tuition-and-other-fees" },
-      { label: "Waiver/Scholarship", href: "/admission/scholarship" },
+      { label: "Waiver/Scholarship", href: "/admissions/waiver-and-scholarship" },
       { label: "International Admission", href: "/admission/international" },
       { label: "Result Verification", href: "/admission/international" },
   ];

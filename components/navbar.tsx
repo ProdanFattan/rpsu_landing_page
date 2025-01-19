@@ -56,7 +56,7 @@ function Navbar() {
         label: "Tuition & Other Fees",
         href: "/admissions/tuition-and-other-fees",
       },
-      { label: "Waiver/Scholarship", href: "/admission/scholarship" },
+      { label: "Waiver/Scholarship", href: "/admissions/waiver-and-scholarship" },
       { label: "International Admission", href: "/admission/international" },
       { label: "Result Verification", href: "/admission/international" },
       {

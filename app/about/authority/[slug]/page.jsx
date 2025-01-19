@@ -1,6 +1,9 @@
+"use client"
 import authorityData from "@/app/data/authorityData";
-function ExpandableCardDemo({ params }) {
-  const { slug } = params;
+import { useParams } from "next/navigation";
+function ExpandableCardDemo() {
+  const params = useParams(); // Directly call useParams
+  const slug = params?.slug || '';
   const authority = authorityData.find((item) => item.slug === slug);
   const cards = authority.member.map((member) => ({
     title: member.name,

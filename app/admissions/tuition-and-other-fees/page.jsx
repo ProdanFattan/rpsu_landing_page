@@ -379,7 +379,12 @@ const TuitionFees = () => {
             </span>
             <button
               className="md:ml-[500px] bg-btn_clr md:w-[140px] md:h-[48px] rounded-[10px] text-white ml-[30px] w-[80px] h-[30px]"
-              onClick={() => setShowUndergraduate(!showUndergraduate)}
+              onClick={() => {
+                setShowUndergraduate(!showUndergraduate);
+                setShowGraduate(false);
+                setShowCost(false);
+              }}
+              
             >
               View
             </button>
@@ -464,7 +469,12 @@ const TuitionFees = () => {
             </span>
             <button
               className="md:ml-[588px] bg-btn_clr md:w-[140px] md:h-[48px] rounded-[10px] text-white ml-[80px] w-[80px] h-[30px]"
-              onClick={() => setShowGraduate(!showGraduate)}
+              onClick={() => {
+                setShowUndergraduate(false);
+                setShowGraduate(!showGraduate);
+                setShowCost(false);
+              }}
+              
             >
               View
             </button>
@@ -541,7 +551,12 @@ const TuitionFees = () => {
             </span>
             <button
               className="md:ml-[600px] bg-btn_clr md:w-[140px] md:h-[48px] rounded-[10px] text-white ml-[88px] w-[80px] h-[30px]"
-              onClick={() => setShowCost(!showCost)}
+              onClick={() => {
+                setShowUndergraduate(false);
+                setShowGraduate(false);
+                setShowCost(!showCost);
+              }}
+              
             >
               View
             </button>

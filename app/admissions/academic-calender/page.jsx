@@ -18,7 +18,7 @@ const Calender = () => {
               Spring 2025
             </span>
             <button className="md:ml-[700px] bg-btn_clr md:w-[140px] md:h-[48px] w-[80px] h-[30px] rounded-[10px] text-white ml-40">
-              <a href="http://rpsu.ac.bd/frontend/assets/images/calendar/Events_of_2025.pdf" target="_blank">
+              <a href="/Events_of_2025.pdf" target="_blank" rel="noopener noreferrer">
                 View
               </a>
             </button>
