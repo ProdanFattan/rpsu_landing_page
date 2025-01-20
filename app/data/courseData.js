@@ -3,6 +3,7 @@ const courseData = [
     name: "BSc. Computer Science & Engineering(CSE)",
     slug: "bachelor-of-science-in-computer-science-and-engineering",
     image: "/cse.webp",
+    departmentSlug: "computer-science-and-engineering",
     head: {
       name: "Tanjina Akter",
       slug: "tanjina-akter",
@@ -751,8 +752,18 @@ const courseData = [
     },
   },
   {
-    name: "Bachelor of Science in Electrical & Electronic Engineering(EEE)",
+    name: "BSc. Electrical & Electronic Engineering(EEE)",
     slug: "bachelor-of-science-in-electrical-and-electronic-engineering",
+    image: "/eee.webp",
+    departmentSlug: "electrical-and-electronic-engineering",
+    head: {
+      name: null,
+      slug: "engr-md-lutfur-rahman",
+      title: "Message from the Department",
+      image: null,
+      message:
+        "Welcome to the Department of Electrical and Electronic Engineering at Ranada Prasad Shaha University. Our mission is to inspire and prepare students with advanced knowledge, practical skills, and a drive for innovation to address the challenges of the modern world. We are committed to cultivating an academic environment that nurtures creativity, critical thinking, and research. With our dedicated faculty, cutting-edge laboratories, and an industry-oriented curriculum, we ensure our graduates are equipped to lead in the ever-evolving field of electrical and electronic engineering. Join us to explore the exciting possibilities of technology, contribute to groundbreaking innovations, and make a positive impact on society.",
+    },
     tabData: {
       "course-details": {
         School: "School of Engineering",
@@ -1473,6 +1484,1132 @@ const courseData = [
       },
     },
   },
+  {
+    name: "Bachelor of Business Administration(BBA)",
+    slug: "bachelor-of-business-administration-bba",
+    image: "/bba.webp",
+    departmentSlug: "business-administration",
+    head: {
+      name: "Dr. Sheikh Abdur Rahim",
+      slug: "dr-sheikh-abdur-rahim",
+      title: "Head of the Department",
+      image: "/dr-sheikh-abdur-rahim.jpg",
+      message:
+        "Welcome to the Department of Business Administration at Ranada Prasad Shaha University. Our mission is to shape future business leaders with the knowledge, skills, and mindset to thrive in a dynamic global economy. We emphasize academic excellence, practical learning, and innovation to develop professionals who can drive growth and create meaningful change. Our experienced faculty, modern facilities, and industry-relevant curriculum ensure students are prepared to excel in diverse fields such as management, marketing, finance, and entrepreneurship. Join us to build a strong foundation for your career, unlock your potential, and become a leader in the business world.",
+    },
+    tabData: {
+      "course-details": {
+        School: "School of Business",
+        Duration: "4 years",
+        Department: "Department of Business Administration",
+        Credits: "127",
+        Award: "BBA.",
+        Location: "RPSU Campus",
+      },
+      career: [
+        "Software Development: Engineer, Web Dev, Mobile Dev",
+        "Data Science: Analyst, Scientist",
+        "AI & Machine Learning: Engineer, Analyst",
+        "Cybersecurity: Analyst, Tester",
+        "Cloud Computing: Architect, Admin",
+        "Game Development: Designer, Programmer",
+        "IoT & Embedded Systems: IoT Dev, Firmware Engineer",
+        "Research & Academia: Assistant, Lecturer",
+      ],
+      "year-1": {
+        "1st Semester": [
+          {
+            number: 1,
+            courseCode: "0231-111",
+            courseTitle: "Functional English",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 2,
+            courseCode: "0232-112",
+            courseTitle: "Bengali Literature",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 3,
+            courseCode: "0611-113",
+            courseTitle: "Computer Applications in Business",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 4,
+            courseCode: "0541-114",
+            courseTitle: "Mathematics for Business",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 5,
+            courseCode: "0222-115",
+            courseTitle: "Bangladesh Studies",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 6,
+            courseCode: "0413-111",
+            courseTitle: "Introduction to Business",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: null,
+            courseCode: "",
+            courseTitle: "",
+            credit: 18,
+            hoursPerWeek: "18",
+            preRequisite: "",
+            coRequisite: "Total Credits",
+          },
+        ],
+        "2nd Semester": [
+          {
+            number: 1,
+            courseCode: "0031-121",
+            courseTitle: "Presentation Skill Development",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 2,
+            courseCode: "0542-122",
+            courseTitle: "Introduction to Statistics",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 3,
+            courseCode: "0411-121",
+            courseTitle: "Principles of Accounting",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-111",
+            coRequisite: "-",
+          },
+          {
+            number: 4,
+            courseCode: "0413-121",
+            courseTitle: "Principles of Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-111",
+            coRequisite: "-",
+          },
+          {
+            number: 5,
+            courseCode: "0412-121",
+            courseTitle: "Principles of Finance",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-111",
+            coRequisite: "-",
+          },
+          {
+            number: 6,
+            courseCode: "0414-121",
+            courseTitle: "Principles of Marketing",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-111",
+            coRequisite: "-",
+          },
+          {
+            number: null,
+            courseCode: "",
+            courseTitle: "",
+            credit: 18,
+            hoursPerWeek: "18",
+            preRequisite: "",
+            coRequisite: "Total Credits",
+          },
+        ],
+      },
+      "year-2": {
+        "3rd Semester": [
+          {
+            number: 1,
+            courseCode: "0222-211",
+            courseTitle: "Emergence of History of Bangladesh",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 2,
+            courseCode: "0031-212",
+            courseTitle: "Business Communication",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 3,
+            courseCode: "0411-211",
+            courseTitle: "Financial Accounting",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0411-121",
+            coRequisite: "-",
+          },
+          {
+            number: 4,
+            courseCode: "0413-211",
+            courseTitle: "Human Resource Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-121",
+            coRequisite: "-",
+          },
+          {
+            number: 5,
+            courseCode: "0412-211",
+            courseTitle: "Financial Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0412-121",
+            coRequisite: "-",
+          },
+          {
+            number: 6,
+            courseCode: "0414-211",
+            courseTitle: "Marketing Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0414-121",
+            coRequisite: "-",
+          },
+          {
+            number: 7,
+            courseCode: "0612-211",
+            courseTitle: "Management Information Systems",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0611-113",
+            coRequisite: "-",
+          },
+          {
+            number: null,
+            courseCode: "",
+            courseTitle: "",
+            credit: 21,
+            hoursPerWeek: "21",
+            preRequisite: "",
+            coRequisite: "Total Credits",
+          },
+        ],
+        "4th Semester": [
+          {
+            number: 1,
+            courseCode: "0223-221",
+            courseTitle: "Professional Ethics",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 2,
+            courseCode: "0313-222",
+            courseTitle: "Industrial Psychology",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 3,
+            courseCode: "0311-221",
+            courseTitle: "Micro Economics",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-111",
+            coRequisite: "-",
+          },
+          {
+            number: 4,
+            courseCode: "0413-221",
+            courseTitle: "Organizational Behavior",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-121",
+            coRequisite: "-",
+          },
+          {
+            number: 5,
+            courseCode: "0542-221",
+            courseTitle: "Business Statistics",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0542-122",
+            coRequisite: "-",
+          },
+          {
+            number: 6,
+            courseCode: "0414-221",
+            courseTitle: "Supply Chain Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0414-211",
+            coRequisite: "-",
+          },
+          {
+            number: 7,
+            courseCode: "0413-222",
+            courseTitle: "Operations Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-121",
+            coRequisite: "-",
+          },
+          {
+            number: null,
+            courseCode: "",
+            courseTitle: "",
+            credit: 21,
+            hoursPerWeek: "21",
+            preRequisite: "",
+            coRequisite: "Total Credits",
+          },
+        ],
+      },
+      "year-3": {
+        "5th Semester": [
+          {
+            number: 1,
+            courseCode: "0421-311",
+            courseTitle: "Legal Issues in Business",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "None",
+            coRequisite: "-",
+          },
+          {
+            number: 2,
+            courseCode: "0311-311",
+            courseTitle: "Macro Economics",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0311-221",
+            coRequisite: "-",
+          },
+          {
+            number: 3,
+            courseCode: "0411-311",
+            courseTitle: "Managerial Accounting",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0411-211",
+            coRequisite: "-",
+          },
+          {
+            number: 4,
+            courseCode: "0413-311",
+            courseTitle:
+              "Entrepreneurship Development and New Business Creation",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-121",
+            coRequisite: "-",
+          },
+          {
+            number: 5,
+            courseCode: "Major Courses (2)",
+            courseTitle: "Two Courses from Chosen Major",
+            credit: 6,
+            hoursPerWeek: "6+0",
+            preRequisite: "Refer to Major Table",
+            coRequisite: "-",
+          },
+          {
+            number: null,
+            courseCode: "",
+            courseTitle: "",
+            credit: 18,
+            hoursPerWeek: "18",
+            preRequisite: "",
+            coRequisite: "Total Credits",
+          },
+        ],
+        "5th Semester Majors in Marketing": [
+          {
+            courseCode: "0414-1-311",
+            courseTitle: "Consumer Behavior",
+            credit: 3,
+            preRequisite: "0414-121",
+          },
+          {
+            courseCode: "0414-1-312",
+            courseTitle: "International Marketing",
+            credit: 3,
+            preRequisite: "0414-121",
+          },
+        ],
+        "5th Semester Majors in Management": [
+          {
+            courseCode: "0413-2-312",
+            courseTitle: "Organizational Development and Change",
+            credit: 3,
+            preRequisite: "0413-121",
+          },
+          {
+            courseCode: "0413-2-313",
+            courseTitle: "Global Business Strategy",
+            credit: 3,
+            preRequisite: "0413-121",
+          },
+        ],
+        "5th Semester Majors in Accounting": [
+          {
+            courseCode: "0411-3-312",
+            courseTitle: "Intermediate Accounting",
+            credit: 3,
+            preRequisite: "0411-121",
+          },
+          {
+            courseCode: "0411-3-313",
+            courseTitle: "Audit and Assurance",
+            credit: 3,
+            preRequisite: "0411-121",
+          },
+        ],
+        "5th Semester Majors in Finance": [
+          {
+            courseCode: "0412-4-311",
+            courseTitle: "Financial Markets and Institutions",
+            credit: 3,
+            preRequisite: "0412-211",
+          },
+          {
+            courseCode: "0412-4-312",
+            courseTitle: "Insurance and Risk Management",
+            credit: 3,
+            preRequisite: "0412-211",
+          },
+        ],
+        "5th Semester Majors in Human Resource Management": [
+          {
+            courseCode: "0413-5-311",
+            courseTitle: "Human Resource Planning and Forecasting",
+            credit: 3,
+            preRequisite: "0413-211",
+          },
+          {
+            courseCode: "0413-5-312",
+            courseTitle: "Industrial Relations and Labor Law",
+            credit: 3,
+            preRequisite: "0413-211",
+          },
+        ],
+        "5th Semester Majors in Management Information Systems": [
+          {
+            courseCode: "0413-6-311",
+            courseTitle: "Programming for Information Systems",
+            credit: 3,
+            preRequisite: "0612-211",
+          },
+          {
+            courseCode: "0413-6-312",
+            courseTitle: "Strategic Management and Information Systems",
+            credit: 3,
+            preRequisite: "0612-211",
+          },
+        ],
+
+        "6th Semester": [
+          {
+            number: 1,
+            courseCode: "0411-321",
+            courseTitle: "Taxation",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0411-211",
+            coRequisite: "-",
+          },
+          {
+            number: 2,
+            courseCode: "0499-321",
+            courseTitle: "Business Research Methods - I",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0542-221",
+            coRequisite: "-",
+          },
+          {
+            number: 3,
+            courseCode: "0413-322",
+            courseTitle: "International Business",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-111",
+            coRequisite: "-",
+          },
+          {
+            number: 4,
+            courseCode: "0413-321",
+            courseTitle: "Total Quality Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-121",
+            coRequisite: "-",
+          },
+          {
+            number: 5,
+            courseCode: "Major Courses (2)",
+            courseTitle: "Two Courses from Chosen Major",
+            credit: 6,
+            hoursPerWeek: "6+0",
+            preRequisite: "Refer to Major Table",
+            coRequisite: "-",
+          },
+          {
+            number: null,
+            courseCode: "",
+            courseTitle: "",
+            credit: 18,
+            hoursPerWeek: "18",
+            preRequisite: "",
+            coRequisite: "Total Credits",
+          },
+        ],
+        "6th Semester Majors in Marketing": [
+          {
+            courseCode: "0414-1-321",
+            courseTitle: "Service Marketing",
+            credit: 3,
+            preRequisite: "0414-121",
+          },
+          {
+            courseCode: "0414-1-322",
+            courseTitle: "Integrated Marketing Communication",
+            credit: 3,
+            preRequisite: "0414-121",
+          },
+        ],
+        "6th Semester Majors in Management": [
+          {
+            courseCode: "0413-2-322",
+            courseTitle: "Management Science",
+            credit: 3,
+            preRequisite: "0413-121",
+          },
+          {
+            courseCode: "0413-2-323",
+            courseTitle: "Management of Change and Technology",
+            credit: 3,
+            preRequisite: "0413-121",
+          },
+        ],
+        "6th Semester Majors in Accounting": [
+          {
+            courseCode: "0411-3-322",
+            courseTitle: "Cost Accounting",
+            credit: 3,
+            preRequisite: "0411-121",
+          },
+          {
+            courseCode: "0411-3-323",
+            courseTitle: "Advanced Financial Accounting",
+            credit: 3,
+            preRequisite: "0411-121",
+          },
+        ],
+        "6th Semester Majors in Finance": [
+          {
+            courseCode: "0412-4-321",
+            courseTitle: "Fundamental of Corporate Finance",
+            credit: 3,
+            preRequisite: "0412-211",
+          },
+          {
+            courseCode: "0412-4-322",
+            courseTitle: "Working Capital Management",
+            credit: 3,
+            preRequisite: "0412-211",
+          },
+        ],
+        "6th Semester Majors in Human Resource Management": [
+          {
+            courseCode: "0413-5-321",
+            courseTitle: "Performance Appraisal and Management",
+            credit: 3,
+            preRequisite: "0413-211",
+          },
+          {
+            courseCode: "0413-5-322",
+            courseTitle: "Compensation and Benefit Management",
+            credit: 3,
+            preRequisite: "0413-211",
+          },
+        ],
+        "6th Semester Majors in Management Information Systems": [
+          {
+            courseCode: "0413-6-321",
+            courseTitle: "Data Communication and Networking",
+            credit: 3,
+            preRequisite: "0612-211",
+          },
+          {
+            courseCode: "0413-5-322",
+            courseTitle: "Database Management",
+            credit: 3,
+            preRequisite: "0612-211",
+          },
+        ],
+      },
+      "year-4": {
+        "7th Semester": [
+          {
+            number: 1,
+            courseCode: "0413-411",
+            courseTitle: "Project Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-121",
+            coRequisite: "-",
+          },
+          {
+            number: 2,
+            courseCode: "0612-411",
+            courseTitle: "Digital Business and E-Commerce Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0612-211",
+            coRequisite: "-",
+          },
+          {
+            number: 3,
+            courseCode: "0499-411",
+            courseTitle: "Business Research Methods - II",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0499-321",
+            coRequisite: "-",
+          },
+          {
+            number: 4,
+            courseCode: "0413-412",
+            courseTitle: "Strategic Management",
+            credit: 3,
+            hoursPerWeek: "3+0",
+            preRequisite: "0413-121",
+            coRequisite: "-",
+          },
+          {
+            number: 5,
+            courseCode: "Major Courses (2)",
+            courseTitle: "Two Courses from Chosen Major",
+            credit: 6,
+            hoursPerWeek: "6+0",
+            preRequisite: "Refer to Major Table",
+            coRequisite: "-",
+          },
+          {
+            number: null,
+            courseCode: "",
+            courseTitle: "",
+            credit: 18,
+            hoursPerWeek: "18",
+            preRequisite: "",
+            coRequisite: "Total Credits",
+          },
+        ],
+        "7th Semester Majors in Marketing": [
+          {
+            courseCode: "0414-1-411",
+            courseTitle: "Selling and Sales Management",
+            credit: 3,
+            preRequisite: "0414-121",
+          },
+          {
+            courseCode: "0414-1-412",
+            courseTitle: "Marketing Research",
+            credit: 3,
+            preRequisite: "0414-121",
+          },
+        ],
+        "7th Semester Majors in Management": [
+          {
+            courseCode: "0413-2-413",
+            courseTitle: "Leadership, Power and Influence",
+            credit: 3,
+            preRequisite: "0413-121",
+          },
+          {
+            courseCode: "0413-2-414",
+            courseTitle: "Corporate Social Responsibilities",
+            credit: 3,
+            preRequisite: "0413-121",
+          },
+        ],
+        "7th Semester Majors in Accounting": [
+          {
+            courseCode: "0411-3-411",
+            courseTitle: "Accounting Information Systems",
+            credit: 3,
+            preRequisite: "0411-121",
+          },
+          {
+            courseCode: "0411-3-412",
+            courseTitle: "Financial Statement Analysis",
+            credit: 3,
+            preRequisite: "0411-121",
+          },
+        ],
+        "7th Semester Majors in Finance": [
+          {
+            courseCode: "0412-4-411",
+            courseTitle: "Financial Analysis and Control",
+            credit: 3,
+            preRequisite: "0412-211",
+          },
+          {
+            courseCode: "0412-4-412",
+            courseTitle: "Introduction to Financial Derivatives",
+            credit: 3,
+            preRequisite: "0412-211",
+          },
+        ],
+        "7th Semester Majors in Human Resource Management": [
+          {
+            courseCode: "0413-5-411",
+            courseTitle: "Leadership, Power and Influence",
+            credit: 3,
+            preRequisite: "0413-211",
+          },
+          {
+            courseCode: "0413-5-412",
+            courseTitle: "Human Resource in Global Business Environment",
+            credit: 3,
+            preRequisite: "0413-211",
+          },
+        ],
+        "7th Semester Majors in Management Information Systems": [
+          {
+            courseCode: "0413-6-412",
+            courseTitle: "Decision Support Systems",
+            credit: 3,
+            preRequisite: "0612-221",
+          },
+          {
+            courseCode: "0413-6-413",
+            courseTitle: "Enterprise Resource Planning",
+            credit: 3,
+            preRequisite: "0612-221",
+          },
+        ],
+
+        "8th Semester": [
+          {
+            number: 1,
+            courseCode: "0499-421",
+            courseTitle: "Viva Voce",
+            credit: 4,
+            hoursPerWeek: "4+0",
+            preRequisite: "After completion of all courses",
+            coRequisite: "-",
+          },
+          {
+            number: 2,
+            courseCode: "0499-422",
+            courseTitle: "Internship/ Project Report",
+            credit: 4,
+            hoursPerWeek: "4+0",
+            preRequisite: "After completion of all courses",
+            coRequisite: "-",
+          },
+          {
+            number: null,
+            courseCode: "",
+            courseTitle: "",
+            credit: 8,
+            hoursPerWeek: "8",
+            preRequisite: "",
+            coRequisite: "Total Credits",
+          },
+        ],
+      },
+    },
+  },
+  {
+    name: "Bachelor of Business Administration (BBA) in Finance",
+    slug: "bachelor-of-business-administration-finance",
+    image: "/bbaf.webp",
+    departmentSlug: "business-administration",
+    head: {
+      name: "Dr. Sheikh Abdur Rahim",
+      slug: "dr-sheikh-abdur-rahim",
+      title: "Head of the Department",
+      image: "/dr-sheikh-abdur-rahim.jpg",
+      message:
+        "Welcome to the Department of Business Administration at Ranada Prasad Shaha University. Our mission is to shape future business leaders with the knowledge, skills, and mindset to thrive in a dynamic global economy. We emphasize academic excellence, practical learning, and innovation to develop professionals who can drive growth and create meaningful change. Our experienced faculty, modern facilities, and industry-relevant curriculum ensure students are prepared to excel in diverse fields such as management, marketing, finance, and entrepreneurship. Join us to build a strong foundation for your career, unlock your potential, and become a leader in the business world.",
+    },
+    tabData: {
+      "course-details": {
+        School: "School of Business",
+        Duration: "4 years",
+        Department: "Department of Business Administration",
+        Credits: "127",
+        Award: "BBA.",
+        Location: "RPSU Campus",
+      },
+      career: [
+        "Software Development: Engineer, Web Dev, Mobile Dev",
+        "Data Science: Analyst, Scientist",
+        "AI & Machine Learning: Engineer, Analyst",
+        "Cybersecurity: Analyst, Tester",
+        "Cloud Computing: Architect, Admin",
+        "Game Development: Designer, Programmer",
+        "IoT & Embedded Systems: IoT Dev, Firmware Engineer",
+        "Research & Academia: Assistant, Lecturer",
+      ],
+      "year-1": {
+        "1st Semester": [
+          {
+            "number": 1,
+            "courseCode": "GED 110",
+            "courseTitle": "English Reading & Composition I",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 2,
+            "courseCode": "GED 111",
+            "courseTitle": "Bangladesh Studies: Culture, Heritage & Economy",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 3,
+            "courseCode": "BMT 113",
+            "courseTitle": "Business Mathematics I",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 4,
+            "courseCode": "BUS 121",
+            "courseTitle": "Introduction to Business",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 5,
+            "courseCode": "GED 112",
+            "courseTitle": "Introduction to Sociology",
+            "credit": 3,
+            "preRequisite": "None"
+          }
+        ],
+        "2nd Semester": [
+          {
+            "number": 1,
+            "courseCode": "GED 115",
+            "courseTitle": "English Reading & Composition II",
+            "credit": 3,
+            "preRequisite": "GED 110"
+          },
+          {
+            "number": 2,
+            "courseCode": "MGT 122",
+            "courseTitle": "Principles of Management",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 3,
+            "courseCode": "ACN 123",
+            "courseTitle": "Principles of Accounting",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 4,
+            "courseCode": "BST 114",
+            "courseTitle": "Business Statistics I",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 5,
+            "courseCode": "MIS 116",
+            "courseTitle": "Basic Computer Concepts",
+            "credit": 3,
+            "preRequisite": "None"
+          }
+        ]
+      },
+      "year-2":{
+        "3rd Semester": [
+          {
+            "number": 1,
+            "courseCode": "ECO 126",
+            "courseTitle": "Micro Economics",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 2,
+            "courseCode": "FIN 125",
+            "courseTitle": "Principles of Finance",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 3,
+            "courseCode": "BUS 131",
+            "courseTitle": "Business Communication",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 4,
+            "courseCode": "LAW 132",
+            "courseTitle": "Business Law",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 5,
+            "courseCode": "MKT 124",
+            "courseTitle": "Principles of Marketing",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 6,
+            "courseCode": "BMT 232",
+            "courseTitle": "Business Mathematics II",
+            "credit": 3,
+            "preRequisite": "None"
+          }
+        ],
+        "4th Semester": [
+          {
+            "number": 1,
+            "courseCode": "GED 120",
+            "courseTitle": "Public Speaking",
+            "credit": 3,
+            "preRequisite": "GED 110, GED 115"
+          },
+          {
+            "number": 2,
+            "courseCode": "MGT 221",
+            "courseTitle": "Organizational Behavior",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 3,
+            "courseCode": "ECO 243",
+            "courseTitle": "Macro Economics",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 4,
+            "courseCode": "ACN 225",
+            "courseTitle": "Financial Accounting",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 5,
+            "courseCode": "ACN 244",
+            "courseTitle": "Taxation",
+            "credit": 3,
+            "preRequisite": "None"
+          }
+        ]
+      },
+      "year-3": {
+        "5th Semester": [
+          {
+            "number": 1,
+            "courseCode": "ACN 254",
+            "courseTitle": "Management Accounting",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 2,
+            "courseCode": "BUS 323",
+            "courseTitle": "Business Ethics",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 3,
+            "courseCode": "MIS 333",
+            "courseTitle": "Management Information Systems (MIS)",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 4,
+            "courseCode": "FIN 322",
+            "courseTitle": "Financial Management",
+            "credit": 3,
+            "preRequisite": "FIN 125"
+          },
+          {
+            "number": 5,
+            "courseCode": "MGT 323",
+            "courseTitle": "Human Resource Management",
+            "credit": 3,
+            "preRequisite": "MGT 122, MGT 221"
+          }
+        ],
+        "6th Semester": [
+          {
+            "number": 1,
+            "courseCode": "MKT 324",
+            "courseTitle": "Marketing Management",
+            "credit": 3,
+            "preRequisite": "MKT 124"
+          },
+          {
+            "number": 2,
+            "courseCode": "MGT 329",
+            "courseTitle": "Production and Operations Management",
+            "credit": 3,
+            "preRequisite": "BUS 121, BMT 113, BMT 232"
+          },
+          {
+            "number": 3,
+            "courseCode": "BUS 321",
+            "courseTitle": "Entrepreneurship Development",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 4,
+            "courseCode": "BST 242",
+            "courseTitle": "Business Statistics II",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 5,
+            "courseCode": "BUS 322",
+            "courseTitle": "International Business",
+            "credit": 3,
+            "preRequisite": "None"
+          }
+        ]
+      },
+      "year-4": {
+        "7th Semester": [
+          {
+            "number": 1,
+            "courseCode": "FIN 334",
+            "courseTitle": "Banking and Insurance",
+            "credit": 3,
+            "preRequisite": "None"
+          },
+          {
+            "number": 2,
+            "courseCode": "BUS 353",
+            "courseTitle": "Research Methodology",
+            "credit": 3,
+            "preRequisite": "BST 114, BST 242"
+          },
+          {
+            "number": 3,
+            "courseCode": "Major-1",
+            "courseTitle": "Major Course 1",
+            "credit": 3,
+            "preRequisite": "All GED & Core Courses"
+          },
+          {
+            "number": 4,
+            "courseCode": "Major-2",
+            "courseTitle": "Major Course 2",
+            "credit": 3,
+            "preRequisite": "All GED & Core Courses"
+          },
+          {
+            "number": 5,
+            "courseCode": "Major-3",
+            "courseTitle": "Major Course 3",
+            "credit": 3,
+            "preRequisite": "All GED & Core Courses"
+          }
+        ],
+        "8th Semester": [
+          {
+            "number": 1,
+            "courseCode": "FIN 411",
+            "courseTitle": "Project Management",
+            "credit": 3,
+            "preRequisite": "BUS 124"
+          },
+          {
+            "number": 2,
+            "courseCode": "MGT 493",
+            "courseTitle": "Strategic Management",
+            "credit": 3,
+            "preRequisite": "All GED & Core Courses"
+          },
+          {
+            "number": 3,
+            "courseCode": "Major-4",
+            "courseTitle": "Major Course 4",
+            "credit": 3,
+            "preRequisite": "All GED & Core Courses"
+          },
+          {
+            "number": 4,
+            "courseCode": "Major-5",
+            "courseTitle": "Major Course 5",
+            "credit": 3,
+            "preRequisite": "All GED & Core Courses"
+          },
+          {
+            "number": 5,
+            "courseCode": "Major-6",
+            "courseTitle": "Major Course 6",
+            "credit": 3,
+            "preRequisite": "All GED & Core Courses"
+          },
+          {
+            "number": 6,
+            "courseCode": "INT 494 /INT 495",
+            "courseTitle": "Internship/ Project Report",
+            "credit": 3,
+            "preRequisite": "Complete all Courses"
+          }
+        ]
+      },
+    },
+  },
+
+
 ];
 
 export default courseData;

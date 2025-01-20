@@ -2,6 +2,7 @@ import facultyData from "../../../data/facultyData";
 function ExpandableCardDemo({ params }) {
   const { slug } = params;
   const faculty = facultyData.find((item) => item.slug === slug);
+  console.log(faculty);
   const cards = faculty.member.map((member) => ({
     title: member.name,
     description: member.title,

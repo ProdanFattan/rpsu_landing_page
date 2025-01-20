@@ -36,7 +36,7 @@ const AcademicsPage = ({params}) => {
         {(school.department || school.programs)?.map((item, itemIndex) => (
             <a
               key={itemIndex}
-              href={`/${item.slug}`}
+              href={`/about/programs/${item.slug}`}
               className="px-2 2xl:text-start text-center pb-8 block"
             >
               <div className="pb-2">
