@@ -37,7 +37,7 @@ const Admission = () => {
     },
     {
       label: "Fashion Design",
-      href: "/admissions/faculty/fashion-design",
+      href: "/admissions/faculty/fashion-and-design",
     },
     { label: "Public Health", href: "/admissions/faculty/public-health" },
     { label: "GED", href: "/admissions/faculty/ged" },

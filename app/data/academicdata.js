@@ -99,7 +99,7 @@ const academicDataSet = [
     "image": "/fashion.webp",
     "programs":[{
     "name": "Bachelor in Fashion & Design(Hons.)",
-    "slug": "bachelor-of-pharmacy",
+    "slug": "bachelor-of-fashion-and-design",
     "status": "ongoing",
     "image": "/tfd.webp" 
     }],

@@ -127,7 +127,7 @@ const ProgramPage = () => {
   const staticTabs = ["course-details", "career"];
 
   // Dynamically generate year tabs
-  const yearTabs = ["year-1", "year-2", "year-3", "year-4"];
+  const yearTabs = Object.keys(tabData).filter((key) => !staticTabs.includes(key));
   return (
     <div>
       <div

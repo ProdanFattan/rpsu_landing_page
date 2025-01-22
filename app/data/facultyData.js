@@ -168,7 +168,7 @@ const facultyData = [
     },
     {
       name: "Fahmina Akter",
-      slug: "fahmida-akter",
+      slug: "fahmina-akter",
       title: "Lecturer",
       degree: "BA, MA in English (JnU)",
       History: "",
@@ -423,8 +423,8 @@ const facultyData = [
       image: "/dr-anm-arifiur-rahman.jpg",
     },
     {
-      name: "Kazi Latifur Rahman",
-      slug: "kazi-latifur-rahman",
+      name: "Kazi Latifur Reza",
+      slug: "kazi-latifur-reza",
       title: "Associate Professor",
       degree: "LLB (DU), LLM (University of East London,UK)",
       History: "",

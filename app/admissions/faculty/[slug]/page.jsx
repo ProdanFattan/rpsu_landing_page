@@ -2,9 +2,10 @@ import facultyData from "../../../data/facultyData";
 function ExpandableCardDemo({ params }) {
   const { slug } = params;
   const faculty = facultyData.find((item) => item.slug === slug);
-  console.log(faculty);
+  
   const cards = faculty.member.map((member) => ({
     title: member.name,
+    slug: member.slug,
     description: member.title,
     src: member.image,
     degree: member.degree,
@@ -24,6 +25,11 @@ function ExpandableCardDemo({ params }) {
       <div className="container mx-auto">
       <ul className="mx-auto w-full grid grid-cols-1 md:grid-cols-4 items-start font-raleway text-footer_back">
         {cards.map((card, index) => (
+          <a
+          key={index}
+          href={`/faculty/${card.slug}`}
+          className="px-2 2xl:text-start text-center pb-8 block"
+        >
           <div
             key={card.title}
             className="p-4 flex flex-col hover:bg-neutral-50 cursor-pointer rounded-[30px] mb-16"
@@ -49,6 +55,7 @@ function ExpandableCardDemo({ params }) {
               </div>
             </div>
           </div>
+          </a>
         ))}
       </ul>
       </div>

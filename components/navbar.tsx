@@ -122,10 +122,10 @@ function Navbar() {
       { label: "CRI", href: "/research/cri" },
     ],
     "Campus Life": [
-      { label: "Events @ RPSU", href: "/news-events/events" },
-      { label: "Campus Gallery", href: "/news-events/gallery" },
-      { label: "Virtual Tour", href: "/news-events/virtual-tour" },
-      { label: "Accommodation", href: "/news-events/accommodation" },
+      { label: "Events @ RPSU", href: "/campus-life/events" },
+      { label: "Campus Gallery", href: "/campus-life/gallery" },
+      { label: "Virtual Tour", href: "/campus-life/virtual-tour" },
+      { label: "Accommodation", href: "/campus-life/accommodation" },
     ],
     about: [
       { label: "History", href: "/about/history" },

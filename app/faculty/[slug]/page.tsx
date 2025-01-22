@@ -9,8 +9,12 @@ const ProfilePage = async ({ params }: any) => {
   
    // Find the matching profile
    const profile: any = dataset.find((item: any) => item.slug === slug);
-  if (!profile) {
-    return <div>Profile not found</div>;
+   if(!profile){
+    return(
+      <>
+      <div className="w-screen h-screen font-raleway font-bold md:text-[48px] justify-center items-center text-footer_back bg-section_back flex text-[24px]">Data Will be Updated Soon...</div>
+      </>
+    )
   }
 
   return (
@@ -20,11 +24,11 @@ const ProfilePage = async ({ params }: any) => {
           <div className="flex flex-col md:flex-row">
             {/*left side*/}
             <div className="text-black flex flex-col items-center py-6 md:py-10 md:w-[400px]">
-              {/* <img
+              <img
                 src={profile.image} 
                 alt={profile.name}
                 className="w-[150px] h-[150px] md:w-[228px] md:h-[230px] rounded-[20px] md:rounded-[40px] border-4 border-white mb-4"
-              /> */}
+              />
               <div className="font-raleway font-bold text-footer_back text-[14px] md:text-[16px] text-center md:text-left hidden md:block">
                 <ul>
                   <li className="py-3 md:py-6">Overview</li>
