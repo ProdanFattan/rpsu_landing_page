@@ -125,8 +125,14 @@ export default function Footer() {
               </a>
             </div>
             <div className="mb-4">
-              <a href="#" className="text-sm text-footer_color"
-              target="_blank" rel="noopener noreferrer">
+              <a href="/about/policies" className="text-sm text-footer_color"
+               rel="noopener noreferrer">
+                RPSU Policies
+              </a>
+            </div>
+            <div className="mb-4">
+              <a href="/kumudini-sister-concern" className="text-sm text-footer_color"
+              rel="noopener noreferrer">
                 Kumudini Sister Concerns
               </a>
             </div>

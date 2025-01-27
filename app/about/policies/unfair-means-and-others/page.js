@@ -1,6 +1,5 @@
 "use client";
 import Footer from "@/components/footer";
-import { div } from "framer-motion/client";
 import React, { useState } from "react";
 
 const UnfairMeansAndOthers = () => {
@@ -409,7 +408,7 @@ const UnfairMeansAndOthers = () => {
           <div className="flex flex-col md:flex-row">
             {/* Sidebar with Tabs */}
             <div className="text-black flex flex-col items-center py-6 md:py-10 md:w-[300px]">
-              <ul className="font-raleway font-bold text-footer_back text-[14px] md:text-[16px] text-center md:text-left hidden md:block">
+              <ul className="font-raleway font-bold text-footer_back text-[18px] text-left hidden md:block">
                 {tabs.map((tab) => (
                   <li
                     key={tab.id}
@@ -430,10 +429,10 @@ const UnfairMeansAndOthers = () => {
               <div className="block md:hidden">
                 {tabs.map((tab) => (
                   <section key={tab.id} className="mb-6">
-                    <h2 className="text-[18px] md:text-[20px] font-bold font-raleway text-gray-800">
+                    <h2 className="text-[18px] font-bold font-raleway text-gray-800">
                       {tab.title}
                     </h2>
-                    <div className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600">
+                    <div className="mt-2 font-open_sans text-[14px]  text-gray-600">
                       {tab.content}
                     </div>
                   </section>
@@ -446,7 +445,7 @@ const UnfairMeansAndOthers = () => {
                   (tab) =>
                     activeTab === tab.id && (
                       <section key={tab.id}>
-                        <div className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600">
+                        <div className="mt-2 font-open_sans text-[18px] text-gray-600">
                           {tab.content}
                         </div>
                       </section>

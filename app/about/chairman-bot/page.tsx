@@ -13,19 +13,19 @@ const ProfilePage = () => {
         <p>
           RPSU is an institution of the Kumudini Welfare Trust (KWT). To
           understand RPSU one must turn the folders of history and look back at
-          how KWT came into being and what it stands for. <br/>It all began in the
+          how KWT came into being and what it stands for. <br/><br/>It all began in the
           early 1930s when the great philanthropist, R P Shaha set up a
           dispensary at his village home in Mirzapur at Tangail which in 1944
           was transformed into a 750 bed free modern hospital named Kumudini
           Hospital. This was followed by establishment of Bharateswari Homes,
-          Kumudini Girls College and Debendra College. <br/>The desire of providing
+          Kumudini Girls College and Debendra College. <br/><br/>The desire of providing
           free health care to the poor as well as education stemmed from the
           very fact that R P Shaha himself as a very young boy saw his mother
           dying for lack of medical care and he not being able to pursue
           education beyond grade three. Through hard work, sincerity and a bit
           of good luck R P Shaha turned into a rich man. Huseyn Shaheed
           Suhrawardy, the then Prime Minister of Pakistan on a visit to Kumudini
-          Complex at Mirzapur in the mid-fifties wrote in the visitor's book: <br/>"A
+          Complex at Mirzapur in the mid-fifties wrote in the visitor's book: <br/><br/>"A
           poor man became a millionaire, and the millionaire voluntarily became
           a poor man, spending hisall in the service of humanity, fort he
           suffering and the distressed, for the furtherance of education, for
@@ -35,25 +35,25 @@ const ProfilePage = () => {
           worldly possessions, he has obtained more than those who were his
           compeers.May that state and the people he has served so well give him
           that recognition which is his due, and not destroy the great
-          institution he has built with such love and devotion". <br/>Unfortunately,
+          institution he has built with such love and devotion". <br/><br/>Unfortunately,
           this great man was abducted by the Pakistan Army during our war of
-          liberation and was never seen again. <br/>Post 1971 the Trust has been able
+          liberation and was never seen again. <br/><br/>Post 1971 the Trust has been able
           to set up a Women's Medical College along with a Dental Unit as well
           as a Nursing Institute and a Nursing College. Having the long
           experience in the field of education, the Trust considered it to be an
           obligation to move into the arena of higher education and that is how
-          RPSU has come into being. <br/>The underlying philosophy of RPSU is to
+          RPSU has come into being. <br/><br/>The underlying philosophy of RPSU is to
           bring out self renewing community of graduates, who are inspired by
           the commitment, passion and hard work characteristic of Kumudini way
           of life, in establishing justice, fairness and caring at all levels of
           society. The courses and curricula of RPSU have been developed by
           renowned professors who are specialists in their respective field
-          keeping those abreast with the latest in the field of study. <br/>RPSU is
+          keeping those abreast with the latest in the field of study. <br/><br/>RPSU is
           one of the very few universities which started functioning on its own
           campus right from the very first day. The campus is on 15 acres of
           serene land on the bank of river Shitalakhya. It is in a lush green
           environment conducive to the pursuit of learning. In addition it has
-          all the facilities that make a modern university. <br/>Finally to our
+          all the facilities that make a modern university. <br/><br/>Finally to our
           prospective students; I am sure those of you who have decided to study
           at RPSU have made the most important and right decision of your
           career. Whether you want to study literature or design machinery,
@@ -123,7 +123,7 @@ const ProfilePage = () => {
             </div>
 
             {/* Main Content */}
-            <div className="md:w-full md:p-6">
+            <div className="md:w-full md:py-6 md:pl-16">
               {/* Header Section */}
               <section className="mb-6">
                 <h2 className="text-[20px] md:text-[32px] font-light font-raleway text-gray-800 text-center md:text-left">

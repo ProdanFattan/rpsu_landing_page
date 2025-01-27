@@ -28,13 +28,13 @@ const ProfilePage = () => {
           property which will create new jobs, educate and train people to work
           in fields where they will be valued both for their specialized
           knowledge, and for their ability to research, communicate and solve
-          problems. In order to meet these challenges RPSU intends to build on
+          problems. <br/><br/>In order to meet these challenges RPSU intends to build on
           collaborative partnerships with business, industry, government, and
           other research institutions. The serene 15 acre green campus of RPSU
           is an ideal place for those seeking knowledge. In keeping with the
           tradition of Kumudini Welfare Trust the parent organization of which
           RPSU is an institution; we wish to excel in the field of education
-          where we have a long history of almost 80 years. <br/>I am sure, the young
+          where we have a long history of almost 80 years. <br/><br/>I am sure, the young
           men and women who choose to pursue courses at RPSU will have had made
           one of the most momentous and right decisions of their career.
           <br/>Thank you.<br/>
@@ -182,7 +182,7 @@ const ProfilePage = () => {
             </div>
 
             {/* Main Content */}
-            <div className="md:w-full md:p-6">
+            <div className="md:w-full md:py-6 md:pl-16">
               <section className="mb-6">
                 <h2 className="text-[20px] md:text-[32px] font-light font-raleway text-gray-800 text-center md:text-left">
                   Professor Dr. Manindra Kumar Roy
