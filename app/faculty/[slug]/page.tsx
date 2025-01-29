@@ -5,16 +5,16 @@ import dataset from "../[slug]/dataset";
 const ProfilePage = async ({ params }: any) => {
   const { slug } = await params;
 
- 
-  
-   // Find the matching profile
-   const profile: any = dataset.find((item: any) => item.slug === slug);
-   if(!profile){
-    return(
+  // Find the matching profile
+  const profile: any = dataset.find((item: any) => item.slug === slug);
+  if (!profile) {
+    return (
       <>
-      <div className="w-screen h-screen font-raleway font-bold md:text-[48px] justify-center items-center text-footer_back bg-section_back flex text-[24px]">Data Will be Updated Soon...</div>
+        <div className="w-screen h-screen font-raleway font-bold md:text-[48px] justify-center items-center text-footer_back bg-section_back flex text-[24px]">
+          Data Will be Updated Soon...
+        </div>
       </>
-    )
+    );
   }
 
   return (
@@ -25,7 +25,7 @@ const ProfilePage = async ({ params }: any) => {
             {/*left side*/}
             <div className="text-black flex flex-col items-center py-6 md:py-10 md:w-[400px]">
               <img
-                src={profile.image} 
+                src={profile.image}
                 alt={profile.name}
                 className="w-[150px] h-[150px] md:w-[228px] md:h-[230px] rounded-[20px] md:rounded-[40px] border-4 border-white mb-4"
               />
@@ -75,9 +75,9 @@ const ProfilePage = async ({ params }: any) => {
                 <div className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600">
                   <ul className="list-disc pl-5">
                     {profile.current_research_works &&
-                      profile.current_research_works.map((item: any, index: any) => (
-                        <li key={index}>{item}</li>
-                      ))}
+                      profile.current_research_works.map(
+                        (item: any, index: any) => <li key={index}>{item}</li>
+                      )}
                   </ul>
                 </div>
               </section>
@@ -89,9 +89,9 @@ const ProfilePage = async ({ params }: any) => {
                 <div className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600">
                   <ul className="list-disc pl-5">
                     {profile.research_interests &&
-                      profile.research_interests.map((item: any, index: any) => (
-                        <li key={index}>{item}</li>
-                      ))}
+                      profile.research_interests.map(
+                        (item: any, index: any) => <li key={index}>{item}</li>
+                      )}
                   </ul>
                 </div>
               </section>
@@ -114,6 +114,8 @@ const ProfilePage = async ({ params }: any) => {
                 </div>
               </section>
               {/* work experience */}
+              // ... (other imports remain same)
+              {/* Work Experience */}
               <section className="mb-6">
                 <h2 className="text-[18px] md:text-[20px] font-bold font-raleway text-gray-800">
                   Work Experience
@@ -121,17 +123,71 @@ const ProfilePage = async ({ params }: any) => {
                 <div className="mt-2 font-open_sans text-[14px] md:text-[16px] text-gray-600">
                   <ul className="list-disc pl-5">
                     {profile.work_experience &&
-                      profile.work_experience.map((item: any, index: any) => (
-                        <li key={index}>
-                          <p>
-                            {item.start_date} to {item.end_date}
-                          </p>
-                          <p>{item.role}</p>
-                          <p>{item.organization_name}</p>
-                          <p>{item.location}</p>
-                          <p>{item.website_link}</p>
-                        </li>
-                      ))}
+                      profile.work_experience
+                        .reduce((acc: any[], item: any, index: number) => {
+                          // Group by organization
+                          const existingOrgIndex = acc.findIndex(
+                            (org) => org.organization === item.organization_name
+                          );
+                          if (existingOrgIndex !== -1) {
+                            acc[existingOrgIndex].roles.push({
+                              role: item.role,
+                              start: item.start_date,
+                              end: item.end_date,
+                            });
+                          } else {
+                            acc.push({
+                              organization: item.organization_name,
+                              location: item.location,
+                              website: item.website_link,
+                              roles: [
+                                {
+                                  role: item.role,
+                                  start: item.start_date,
+                                  end: item.end_date,
+                                },
+                              ],
+                            });
+                          }
+                          return acc;
+                        }, [])
+                        .map((orgGroup: any, index: number) => (
+                          <li key={index} className="mb-4">
+                            {/* Organization Name */}
+                            <p className="font-semibold">
+                              {orgGroup.organization}
+                            </p>
+
+                            {/* Roles List */}
+                            <ul className="list-[circle] pl-5 mt-2">
+                              {orgGroup.roles.map(
+                                (role: any, roleIndex: number) => (
+                                  <li key={roleIndex} className="mb-2">
+                                    {/* Role & Duration */}
+                                    <p>
+                                      {role.role} ({role.start} to {role.end})
+                                    </p>
+                                  </li>
+                                )
+                              )}
+                            </ul>
+
+                            {/* Location & Website */}
+                            <p className="mt-2">{orgGroup.location}</p>
+                            {orgGroup.website && (
+                              <p className="mt-1">
+                                <a
+                                  href={orgGroup.website}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-blue-600 hover:underline"
+                                >
+                                  Visit Website
+                                </a>
+                              </p>
+                            )}
+                          </li>
+                        ))}
                   </ul>
                 </div>
               </section>
@@ -159,8 +215,5 @@ const ProfilePage = async ({ params }: any) => {
     </>
   );
 };
-
-
-
 
 export default ProfilePage;

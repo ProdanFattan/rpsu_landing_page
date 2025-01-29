@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import { MapPin, Mail, Phone, Search,ChevronsUp } from "lucide-react";
 import {
   FaYoutube,
